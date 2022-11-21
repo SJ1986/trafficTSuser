@@ -13,32 +13,34 @@
 <body>
     <div class="wrap">
         <header>
+            <nav class="nav">
+                <div class="nav__inner">
+                    <a href="">001 테스트기관</a>
+                    <a href="">로그아웃</a>
+                    <a href="">개인정보수정</a>
+                    <a href="">My Data</a>
+                    <a href="">Open API</a>
+                </div>
+            </nav>
             <div class="header__inner">
-                <nav class="nav">
-                    <div class="nav__inner">
-                        <a href="">001 테스트기관</a>
-                        <a href="">로그아웃</a>
-                        <a href="">개인정보수정</a>
-                        <a href="">My Data</a>
-                        <a href="">Open API</a>
-                    </div>
-                </nav>
                 <h1 class="header__logo">
                     <a href="">
                         <img src="resource/image/common/img-logo-head.png" alt="TS 한국교통안전공단 자동차안전연구원">
                     </a>
                 </h1>
                 <div class="gnb">
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
-                    <a href=""></a>
+                    <a href="">공공데이터</a>
+                    <a href="">협의체 데이터</a>
+                    <a href="">운행정보 보고</a>
+                    <a href="">자율주행 최신동향</a>
+                    <a href="">데이터 공유센터 시설이용</a>
+                    <a href="">이용안내 </a>
                 </div>
                 <div class="side-menu">
                     <div class="side-menu__inner">
-                        <button type="button" title="사이드 메뉴 열림"></button>
+                        <button type="button" class="side-menu__btn" title="사이드 메뉴 열림">
+                            <span></span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -48,16 +50,31 @@
                 <div class="content">
                     <div class="content__inner">
                         <div id="fullpage">
-                            <div class="section">1</div>
-                            <div class="section">2</div>
-                            <div class="section">3</div>
-                            <div class="section">4</div>
+                            <div class="fullpage-block fullpage-block--main">
+                                <div class="fullpage-block__inner">
+                                    <span class="fullpage-block--main__img">
+                                        <img src="resource/image/main/img-main-visual--logo.png" alt="TS 한국교통안전공단">
+                                    </span>
+                                    <div class="fullpage-block--main__tit">
+                                        자율주행차<br/>데이터 공유센터
+                                    </div>
+                                    <div class="fullpage-block--main__boxes fullpage-block__box">
+                                        <div class="fullpage-block__box--notice">1</div>
+                                        <div class="fullpage-block__box--trend">2</div>
+                                        <div class="fullpage-block__box--intro">3</div>
+                                        <div class="fullpage-block__box--report">4</div>
+                                        <div class="fullpage-block__box--download">5</div>
+                                        <div class="fullpage-block__box--share">6</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fullpage-block  fullpage-block--menu">
+                                <div class="fullpage-block__inner"></div>
+                            </div>
                         </div>
                         <ul id="sidePaging">
                             <li data-menuanchor="first" class="active"><a href="#first">First section</a></li>
                             <li data-menuanchor="second"><a href="#second">Second section</a></li>
-                            <li data-menuanchor="third"><a href="#third">Third section</a></li>
-                            <li data-menuanchor="fourth"><a href="#fourth">Fourth section</a></li>
                         </ul>
                     </div>
                 </div>
@@ -70,6 +87,7 @@
     
     <script type="text/javascript" src="resource/js/lib/jquery/jquery.3.6.1.min.js"></script>
     <script type="text/javascript" src="resource/js/lib/fullpage.js"></script>
+    <script type="text/javascript" src="resource/js/common.js"></script>
     <script type="text/javascript" src="resource/js/main.js"></script>
 </body>
 </html>

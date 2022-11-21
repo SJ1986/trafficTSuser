@@ -1,6 +1,8 @@
 'use strice'; //'use strict'
 
 ($(function(){
+	$('#fullpage').parents('.content').addClass('main');
+
     fullpageFn();
 }))
 
@@ -12,7 +14,7 @@ function fullpageFn(){
 	anchors:['first', 'second', 'third'],
 	navigation: true,
 	navigationPosition: 'right',
-	navigationTooltips: ['firstSlide', 'secondSlide', 'thirdSlide'],
+	navigationTooltips: ['Main', 'Menu', 'thirdSlide'],
 	showActiveTooltip: false,
 	slidesNavigation: false,
 	slidesNavPosition: 'bottom',
@@ -53,8 +55,8 @@ function fullpageFn(){
 	],
 	verticalCentered: true,
 	sectionsColor : ['#ccc', '#fff'],
-	paddingTop: '3em',
-	paddingBottom: '10px',
+	paddingTop: '40px',
+	// paddingBottom: '10px',
 	fixedElements: 'header, footer',
 	responsiveWidth: 0,
 	responsiveHeight: 0,
@@ -69,7 +71,7 @@ function fullpageFn(){
 	cardsOptions: {perspective: 100, fadeContent: true, fadeBackground: true},
 
 	// 맞춤 선택자
-	sectionSelector: '.section',
+	sectionSelector: '.fullpage-block',
 	slideSelector: '.slide',
 
 	lazyLoading: true,

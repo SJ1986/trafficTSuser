@@ -3,3 +3,111 @@
 @import 'mixin';
 @import 'svg';
 
+// .content{
+//     &.main{
+//         padding-top:40px;
+//     }
+// }
+#fullpage{
+    .fullpage-block[data-anchor="first"]{
+        background:url('../image/main/img-main-visual.jpg') no-repeat 0 0;
+        background-size:cover;
+    }
+}
+#fp-nav{
+    right:40px;
+    ul{
+        li{
+            width:8px;
+            height:8px;
+            margin:20px 0;
+            a{
+                display:flex;
+                align-items:center;
+                justify-content: center;
+                span{
+                    @include pos(relative, $t:auto, $l:auto);
+                    display:block;
+                    width:6px !important;
+                    height:6px !important;
+                    margin:0 !important;
+                    border-radius:100%;
+                    background-color:rgba(255, 255, 255, 0.363);
+                }
+                &.active{
+                    span{
+                        width:8px !important;
+                        height:8px !important;
+                        background-color:#fff;
+                    }
+                    + .fp-tooltip{
+                        width:auto;
+                        opacity:1;
+                    }
+                }
+            }
+            .fp-tooltip{
+                top:-3px;
+                right:15px;
+            }
+        }
+    }
+}
+.fullpage{
+    &-block{
+        &__inner{
+            max-width:1400px;
+            height:100%;
+            margin:0 auto;
+        }
+        &--main{
+            .fullpage-block__inner{
+                display:flex;
+                flex-flow:column wrap;
+                padding-top:93.57px;
+                padding-bottom:35px;
+            }
+            &__img{
+                display:block;
+                padding-top:65px;
+            }
+            &__tit{
+                margin-top:40px;
+                margin-bottom:auto;
+                font-size:62px;
+                font-weight:bold;
+                color:#fff;
+                text-shadow:2px 2px 7px rgba(0, 0, 0, 0.5);
+                line-height:1.2;
+            }
+        }
+        &__box{
+            display:grid;
+            grid-template-columns: 372px 402px 318px 318px ;
+            grid-template-rows: 140px 140px;
+            margin-top:auto;
+            margin-bottom:-10px;
+            margin-left:-10px;
+            > div{
+                margin-left:10px;
+                margin-bottom:10px;
+            }
+            &--trend{
+                margin-right:30px;
+            }
+            &--trend, &--notice{
+                grid-row:1 / span 2;
+                background-color:rgb(0 38 80 / 86%);
+                border-radius:10px;
+                mix-blend-mode:hard-light;
+            }
+            &--intro{
+                background-color:#fff;
+            }
+            &--report, &--download, &--share{
+                background-color:#009aff;
+            }
+        }
+        &--menu{}
+    }
+}
