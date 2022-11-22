@@ -18,3 +18,82 @@
     font-size: 62.5%;
   }
 }
+@media screen and (min-width: 1024px) {
+  .fullpage-block--main .fullpage-box__quickLink:hover {
+    background-color: #fff;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .fullpage-block--main .fullpage-box__quickLink:hover span.fullpage-box__txt {
+    color: #000;
+  }
+  .fullpage-block--main .fullpage-box__quickLink:hover span.fullpage-box__txt em.fullpage-box__cap {
+    color: #1180ed;
+  }
+  .fullpage-block--menu .fullpage-box__quickLink a:hover {
+    width: 264px;
+    height: 264px;
+    margin-top: -10px;
+    margin-left: -10px;
+    background-color: #fff;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    -webkit-box-shadow: 3px 4px 7px 1px rgba(0, 0, 0, 0.49);
+            box-shadow: 3px 4px 7px 1px rgba(0, 0, 0, 0.49);
+    border: 2px solid #009aff;
+    z-index: 2;
+  }
+  .fullpage-block--menu .fullpage-box__quickLink a:hover span em {
+    font-weight: 500;
+    color: #1180ed;
+  }
+  .fullpage-block--menu .fullpage-box--v2x a:hover::before {
+    background: no-repeat 50%/auto url("../image/main/img-menu-quickLink--01-on.png");
+  }
+  .fullpage-block--menu .fullpage-box--drivingImg a:hover::before {
+    background: no-repeat 50%/auto url("../image/main/img-menu-quickLink--02-on.png");
+  }
+  .fullpage-block--menu .fullpage-box--sensorData a:hover::before {
+    background: no-repeat 50%/auto url("../image/main/img-menu-quickLink--03-on.png");
+  }
+  .fullpage-block--menu .fullpage-box--learning a:hover::before {
+    background: no-repeat 50%/auto url("../image/main/img-menu-quickLink--04-on.png");
+  }
+  .fullpage-block--menu .fullpage-box--accident a:hover::before {
+    background: no-repeat 49%/auto url("../image/main/img-menu-quickLink--05-on.png");
+  }
+  .fullpage-block--menu .fullpage-box--report a:hover::before {
+    background: no-repeat 49%/auto url("../image/main/img-menu-quickLink--06-on.png");
+  }
+  .fullpage-box--notice .lists li:hover::before, .fullpage-box--trend .lists li:hover::before {
+    background-color: #fff;
+  }
+  .fullpage-box--notice .lists li:hover a, .fullpage-box--trend .lists li:hover a {
+    color: #fff;
+  }
+  .fullpage-box--notice .lists li:hover span, .fullpage-box--trend .lists li:hover span {
+    color: #fff;
+  }
+  .link-more:hover {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .link-more:hover::before {
+    width: 26px;
+    height: 26px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  .link-more:hover span {
+    background-color: #1180ed;
+    -webkit-transform: rotate(270deg);
+            transform: rotate(270deg);
+  }
+  .link-more:hover span::before {
+    background-color: #ff8100;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+}

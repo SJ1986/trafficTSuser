@@ -16,7 +16,15 @@ header{
         padding:30px 0;
     }
     &__logo{
-        margin-right:auto;
+        width:331px;
+        height:32px;
+        a{
+            display:block;
+            width:100%;
+            height:100%;
+            background:url('../image/common/img-logo-head.png') no-repeat 0 0;
+            background-size:contain;
+        }
     }
     
 }

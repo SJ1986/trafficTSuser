@@ -1,22 +1,185 @@
 @charset 'UTF-8';
 
 @media screen and (min-width: 320px) {
-    html {
-      font-size: 32.5%;
+  html {
+    font-size: 32.5%;
+  }
+}
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 42.5%;
+  }
+}
+@media screen and (min-width: 480px) {
+  html {
+    font-size: 52.5%;
+  }
+}
+@media screen and (min-width: 600px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+
+// hover
+@media screen and (min-width: 1024px) {
+
+  .fullpage{
+    &-block{
+      &--main{
+        .fullpage{
+          &-box{
+            &__quickLink{
+              &:hover{
+                background-color:#fff;
+                transition:all .3s ease-in-out;
+                span{
+                  &.fullpage{
+                    &-box{
+                      &__txt{
+                        color:#000;
+                        em{
+                          &.fullpage{
+                            &-box{
+                              &__cap{
+                                color:#1180ed;
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      &--menu{
+        .fullpage{
+          &-box{
+            &__quickLink{
+              a{
+                &:hover{
+                  width:264px;
+                  height:264px;
+                  margin-top:-10px;
+                  margin-left:-10px;
+                  background-color:#fff;
+                  transition:all .3s ease-in-out;
+                  box-shadow:3px 4px 7px 1px rgb(0 0 0 / 49%);
+                  border:2px solid #009aff;
+                  z-index:2;
+                  span{
+                    em{
+                      font-weight:500;
+                      color:#1180ed;
+                    }
+                  }
+                }
+              }
+            }
+            &--v2x{
+              a{
+                &:hover{
+                  &::before{
+                      background:no-repeat 50%/auto url('../image/main/img-menu-quickLink--01-on.png');
+                  }
+                }
+              }
+            }
+            &--drivingImg{
+              a{
+                &:hover{
+                  &::before{
+                      background:no-repeat 50%/auto url('../image/main/img-menu-quickLink--02-on.png');
+                  }
+                }
+              }
+            }
+            &--sensorData{
+              a{
+                &:hover{
+                  &::before{
+                      background:no-repeat 50%/auto url('../image/main/img-menu-quickLink--03-on.png');
+                  }
+                }
+              }
+            }
+            &--learning{
+              a{
+                &:hover{
+                  &::before{
+                      background:no-repeat 50%/auto url('../image/main/img-menu-quickLink--04-on.png');
+                  }
+                }
+              }
+            }
+            &--accident{
+              a{
+                &:hover{
+                  &::before{
+                      background:no-repeat 49%/auto url('../image/main/img-menu-quickLink--05-on.png');
+                  }
+                }
+              }
+            }
+            &--report{
+              a{
+                &:hover{
+                  &::before{
+                      background:no-repeat 49%/auto url('../image/main/img-menu-quickLink--06-on.png');
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    &-box{
+      &--notice, &--trend{
+        .lists{
+          li{
+            &:hover{
+              &::before{
+                background-color:#fff;
+              }
+              a{
+                color:#fff;
+              }
+              span{
+                color:#fff;
+              }
+            }
+          }
+        }
+      }
     }
   }
-  @media screen and (min-width: 360px) {
-    html {
-      font-size: 42.5%;
+  .link{
+    &-more{
+      &:hover{
+        transform:rotate(360deg);
+        transition:all .3s ease-in-out;
+        &::before{
+            width:26px;
+            height:26px;
+            transition:all .3s ease-in-out;
+        }
+      }
+      &:hover{
+        span{
+            background-color:#1180ed;
+            transform:rotate(270deg);
+            &::before{
+                background-color:#ff8100;
+                transition:all .3s ease-in-out;
+            }
+        }
+      }
     }
   }
-  @media screen and (min-width: 480px) {
-    html {
-      font-size: 52.5%;
-    }
-  }
-  @media screen and (min-width: 600px) {
-    html {
-      font-size: 62.5%;
-    }
-  }
+
+}
