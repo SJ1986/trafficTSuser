@@ -133,3 +133,48 @@ header{
         }
     }
 }
+footer{
+    height:100%;
+    background-color:#000d2a;
+    address{
+        margin-right:20px;
+        margin-bottom:10px;
+        font-size:18px;
+        color:#fff;
+        span{
+            color:#a3a6ab;
+        }
+    }
+    .copyRight{
+        margin-top:18px;
+        font-size:16px;
+        color:#a3a6ab;
+        span{
+            color:#3d8aab;
+        }
+    }
+}
+.footer{
+    &__inner{
+        max-width:1400px;
+        width:100%;
+        margin:0 auto;
+        padding:50px 0;
+    }
+    &-logo{
+        display:inline-block;
+        margin-bottom:50px;
+    }
+    &-link{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        width:200px;
+        height:60px;
+        margin-left:auto;
+        background-color:#fff;
+        + .footer-link{
+            margin-left:10px;
+        }
+    }
+}

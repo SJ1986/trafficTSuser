@@ -67,6 +67,11 @@
       -ms-flex-align: center;
           align-items: center;
 }
+.align-end {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
 
 .justify-between {
   -webkit-box-pack: justify;
