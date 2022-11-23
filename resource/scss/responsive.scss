@@ -21,9 +21,52 @@
   }
 }
 
+@media screen and (min-width: 1400px) {
+  .gnb-depth--02{
+    background-size:contain;
+  }
+}
+
 // hover
 @media screen and (min-width: 1024px) {
-
+  header{
+    &.is-open{
+      .gnb{
+        > a{
+          &:hover{
+            font-weight:600;
+            color:#0053b3;
+          }
+        }
+        &-depth{
+          &--03{
+            &__item{
+              &:hover{
+                .gnb-depth--03__tit{
+                  background-color:#0053b3;
+                  color:#fff;
+                }
+                ul{
+                  background-color:#e9eff6;
+                }
+              }
+              ul{
+                li{
+                  a{
+                    &:hover{
+                      font-weight:400;
+                      border-bottom:1px solid #0053b3;
+                      color:#0053b3;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
   .fullpage{
     &-block{
       &--main{
@@ -158,6 +201,14 @@
       }
     }
   }
+  .nav{
+    a{
+      &:hover{
+        font-weight:500;
+        color:#fff;
+    }
+    }
+  }
   .link{
     &-more{
       &:hover{
@@ -181,5 +232,35 @@
       }
     }
   }
-
+  .lnb{
+    &-depth{
+        &--02{
+            li{
+              &:hover{
+                background:url('../image/common/icon/icon-clamp__right--on.png') no-repeat 95% center/auto;
+                &::before{
+                  background-color:#000;
+                }
+              }
+            a{
+              &:hover{
+                font-weight:500;
+                color:#000;
+              }
+            }
+          }
+        }
+    }
+  }
+  .table{
+    &-basic{
+      tr{
+        &:hover{
+          td{
+            background-color:#fff9f2;
+          }
+        }
+      }
+    }
+  }
 }

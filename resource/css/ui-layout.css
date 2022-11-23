@@ -47,30 +47,16 @@
   background-position: center center;
 }
 
-footer.sub .btn--report {
-  color: #000;
-  border: 1px solid #d4dbdd;
+.layout-container__inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding-top: 50px;
 }
-
-.btn {
-  height: 40px;
-  vertical-align: middle;
+.layout-container--row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
-.btn--report {
-  height: 36px;
-  padding: 0 17px;
-  padding-left: 38px;
-  font-size: 15px;
-  color: #fff;
-  border: 1px solid #fff;
-  border-radius: 5px;
-  line-height: 36px;
-  background: url("../image/common/icon/icon-exclam--yellow.png") no-repeat 10% 55%/auto;
-}
-.btn--sch {
-  width: 40px;
-  height: 40px;
-  margin-left: 3px;
-  border-radius: 4px;
-  background: #0053b3 url("../image/common/icon/icon-sch.png") no-repeat center center/auto;
+.layout-content {
+  width: calc(100% - 280px);
 }

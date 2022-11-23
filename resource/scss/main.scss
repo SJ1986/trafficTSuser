@@ -3,11 +3,14 @@
 @import 'mixin';
 @import 'svg';
 
-// .content{
-//     &.main{
-//         padding-top:40px;
-//     }
-// }
+.content{
+    &.main{
+        // padding-top:40px;
+        footer{
+            background-color:#000d2a;
+        }
+    }
+}
 #fullpage{
     .fullpage-block{
         &[data-anchor="first"]{
@@ -25,6 +28,9 @@
         header{
             background-color:rgb(255 255 255 / 90%);
             border-bottom:1px solid #b6b7b8;
+            &.is-open{
+                background-color:#fff;
+            }
         }
         .header{
             &__logo{

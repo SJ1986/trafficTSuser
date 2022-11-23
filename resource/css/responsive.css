@@ -18,7 +18,28 @@
     font-size: 62.5%;
   }
 }
+@media screen and (min-width: 1400px) {
+  .gnb-depth--02 {
+    background-size: contain;
+  }
+}
 @media screen and (min-width: 1024px) {
+  header.is-open .gnb > a:hover {
+    font-weight: 600;
+    color: #0053b3;
+  }
+  header.is-open .gnb-depth--03__item:hover .gnb-depth--03__tit {
+    background-color: #0053b3;
+    color: #fff;
+  }
+  header.is-open .gnb-depth--03__item:hover ul {
+    background-color: #e9eff6;
+  }
+  header.is-open .gnb-depth--03__item ul li a:hover {
+    font-weight: 400;
+    border-bottom: 1px solid #0053b3;
+    color: #0053b3;
+  }
   .fullpage-block--main .fullpage-box__quickLink:hover {
     background-color: #fff;
     -webkit-transition: all 0.3s ease-in-out;
@@ -74,6 +95,10 @@
   .fullpage-box--notice .lists li:hover span, .fullpage-box--trend .lists li:hover span {
     color: #fff;
   }
+  .nav a:hover {
+    font-weight: 500;
+    color: #fff;
+  }
   .link-more:hover {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
@@ -95,5 +120,18 @@
     background-color: #ff8100;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+  }
+  .lnb-depth--02 li:hover {
+    background: url("../image/common/icon/icon-clamp__right--on.png") no-repeat 95% center/auto;
+  }
+  .lnb-depth--02 li:hover::before {
+    background-color: #000;
+  }
+  .lnb-depth--02 li a:hover {
+    font-weight: 500;
+    color: #000;
+  }
+  .table-basic tr:hover td {
+    background-color: #fff9f2;
   }
 }

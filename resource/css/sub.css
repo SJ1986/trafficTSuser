@@ -47,30 +47,134 @@
   background-position: center center;
 }
 
-footer.sub .btn--report {
-  color: #000;
-  border: 1px solid #d4dbdd;
+.lnb {
+  width: 240px;
+  margin-right: 40px;
+}
+.lnb__tit {
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: 500;
+}
+.lnb-item {
+  border-top: 1px solid #e0e4e6;
+}
+.lnb-item > a {
+  position: relative;
+  display: block;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  border-left: 1px solid #e0e4e6;
+  border-right: 1px solid #e0e4e6;
+  background-color: #fff;
+}
+.lnb-item:first-child {
+  border-top: none;
+}
+.lnb-item:first-child a {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top: 1px solid #e0e4e6;
+}
+.lnb-item:last-child a {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom: 1px solid #e0e4e6;
+}
+.lnb-item.is-active > a {
+  background: linear-gradient(94deg, rgb(2, 154, 251) 0%, rgb(0, 89, 198) 100%);
+  font-weight: 500;
+  color: #fff;
+}
+.lnb-item.is-active .lnb-depth--02 {
+  display: block;
+}
+.lnb-item.hasChild > a::before, .lnb-item.hasChild > a::after {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  width: 11px;
+  height: 2px;
+  background-color: #a0a8ab;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  content: "";
+}
+.lnb-item.hasChild > a::after {
+  -webkit-transform: translateY(-50%) rotate(90deg);
+          transform: translateY(-50%) rotate(90deg);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.lnb-item.hasChild.active > a::after {
+  -webkit-transform: translateY(-50%) rotate(0);
+          transform: translateY(-50%) rotate(0);
+}
+.lnb-depth--02 {
+  display: none;
+  padding: 25px 10px 25px 30px;
+  border-top: 1px solid #e0e4e6;
+  border-left: 1px solid #e0e4e6;
+  border-right: 1px solid #e0e4e6;
+  background-color: #f7fafe;
+}
+.lnb-depth--02 li {
+  background: url("../image/common/icon/icon-clamp__right.png") no-repeat 95% center/auto;
+}
+.lnb-depth--02 li > a {
+  font-size: 15px;
+  font-weight: 500;
+  color: #747478;
+}
+.lnb-depth--02 li::before {
+  top: 5px;
+  background-color: #747478;
+}
+.lnb-depth--02 li + li {
+  margin-top: 20px;
 }
 
-.btn {
-  height: 40px;
-  vertical-align: middle;
+.layout-content__tit {
+  font-size: 30px;
+  font-weight: 600;
+  color: #000;
 }
-.btn--report {
-  height: 36px;
-  padding: 0 17px;
-  padding-left: 38px;
+.layout-content__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+.location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.location li {
+  position: relative;
   font-size: 15px;
-  color: #fff;
-  border: 1px solid #fff;
-  border-radius: 5px;
-  line-height: 36px;
-  background: url("../image/common/icon/icon-exclam--yellow.png") no-repeat 10% 55%/auto;
+  font-weight: 400;
+  color: #747478;
 }
-.btn--sch {
-  width: 40px;
-  height: 40px;
-  margin-left: 3px;
-  border-radius: 4px;
-  background: #0053b3 url("../image/common/icon/icon-sch.png") no-repeat center center/auto;
+.location li:last-child {
+  font-weight: 600;
+  color: #000;
+}
+.location li + li::before {
+  display: inline-block;
+  margin: 0 10px;
+  width: 7px;
+  height: 10px;
+  background: url("../image/sub/icon/icon-clamp--location.png") no-repeat 0 0/7px 10px;
+  content: "";
 }

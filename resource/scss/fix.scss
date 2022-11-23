@@ -5,7 +5,6 @@
 .hidden{
     @include pos(absolute, $t:-9999px, $l:-9999px);
 }
-
 .d-flex{
     display:flex;
     -ms-display: flexbox;      /* Over IE10 */
@@ -25,6 +24,13 @@
 .justify{
     &-between{
         justify-content: space-between;
+    }
+}
+.m{
+    &l{
+        &-auto{
+            margin-left:auto;
+        }
     }
 }
 .lists{
@@ -61,6 +67,7 @@
                 &::before{
                     width:2px;
                     height:2px;
+                    background-color:#000;
                 }
             }
         }

@@ -79,6 +79,10 @@
           justify-content: space-between;
 }
 
+.ml-auto {
+  margin-left: auto;
+}
+
 .lists li {
   position: relative;
   padding-left: 10px;
@@ -101,4 +105,5 @@
 .lists-cir--s li::before {
   width: 2px;
   height: 2px;
+  background-color: #000;
 }

@@ -47,30 +47,27 @@
   background-position: center center;
 }
 
-footer.sub .btn--report {
-  color: #000;
-  border: 1px solid #d4dbdd;
+.sch-area--box label {
+  margin-left: 3px;
+}
+.sch-area--box label:first-child select {
+  padding-right: 70px;
+  background-position: 95% center;
+}
+.sch-area--box label:nth-child(2) select {
+  padding-right: 50px;
+  background-position: 90% center;
+}
+.sch-area--box input {
+  width: 285px;
 }
 
-.btn {
-  height: 40px;
-  vertical-align: middle;
+.table-wrap {
+  margin-top: 25px;
 }
-.btn--report {
-  height: 36px;
-  padding: 0 17px;
-  padding-left: 38px;
-  font-size: 15px;
-  color: #fff;
-  border: 1px solid #fff;
-  border-radius: 5px;
-  line-height: 36px;
-  background: url("../image/common/icon/icon-exclam--yellow.png") no-repeat 10% 55%/auto;
+.table--myUpload td {
+  text-align: center;
 }
-.btn--sch {
-  width: 40px;
-  height: 40px;
-  margin-left: 3px;
-  border-radius: 4px;
-  background: #0053b3 url("../image/common/icon/icon-sch.png") no-repeat center center/auto;
+.table--myUpload td:first-child, .table--myUpload td:nth-child(2) {
+  text-align: left;
 }

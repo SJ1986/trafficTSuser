@@ -1,1 +1,62 @@
 @charset 'UTF-8';
+@import 'mixin';
+@import 'svg';
+
+input, select{
+    height:40px;
+    padding:0 20px;
+    padding-right:40px;
+    font-size:15px;
+    font-weight:500;
+    color:#000;
+    border:1px solid #e0e4e6;
+    border-radius:4px;
+    line-height:40px;
+    text-indent:0;
+    background-color:#fff;
+    &::placeholder{
+        font-size:15px;
+        font-weight:500;
+        color:#000;
+    }
+    &:focus{
+        &::placeholder{
+            color:#fff;
+        }
+    }
+}
+select{
+    letter-spacing: -0.05em;
+    background:#fff url('../image/common/icon/icon-clamp__down.png') no-repeat 95% center/auto;
+}
+
+.sch{
+    &-area{
+        &--box{
+            padding:20px 0;
+            input{
+                &::placeholder{
+                    color:#747478;
+                }
+                &:focus{
+                    &::placeholder{
+                        color:#fff;
+                    }
+                }
+            }
+        }
+        &--gray{
+            background-color:#f7f7f7;
+        }
+    }
+    &-form{
+        font-size:0;
+        textarea{
+            background-color:#fff;
+        }
+        &--row{
+            display:flex;
+            justify-content: center;
+        }
+    }
+}

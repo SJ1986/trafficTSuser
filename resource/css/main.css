@@ -48,6 +48,10 @@
   background-position: center center;
 }
 
+.content.main footer {
+  background-color: #000d2a;
+}
+
 #fullpage .fullpage-block[data-anchor=first] {
   background: url("../image/main/img-main-visual.jpg") no-repeat 0 0;
   background-size: cover;
@@ -60,6 +64,9 @@
 .fp-viewing-second header, .fp-viewing-third header {
   background-color: rgba(255, 255, 255, 0.9);
   border-bottom: 1px solid #b6b7b8;
+}
+.fp-viewing-second header.is-open, .fp-viewing-third header.is-open {
+  background-color: #fff;
 }
 .fp-viewing-second .header__logo a, .fp-viewing-third .header__logo a {
   background: url("../image/main/img-logo-head-color.png") no-repeat 0 0;
