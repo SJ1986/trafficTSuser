@@ -203,8 +203,16 @@ header{
             }
         }
         &--03{
+            position:relative;
             display:flex;
             width:calc(100% - 325px);
+            &::before{
+                @include pos(absolute, $t:84px, $l:0);
+                width:100%;
+                height:1px;
+                background-color:#e4e5e5;
+                content:""
+            }
             &__item{
                 display:flex;
                 flex-flow:column wrap;

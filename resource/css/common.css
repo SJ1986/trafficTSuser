@@ -245,10 +245,20 @@ header.sub .side-menu__btn span {
   line-height: 1.3;
 }
 .gnb-depth--03 {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: calc(100% - 325px);
+}
+.gnb-depth--03::before {
+  position: absolute;
+  top: 84px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #e4e5e5;
+  content: "";
 }
 .gnb-depth--03__item {
   display: -webkit-box;
