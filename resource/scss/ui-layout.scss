@@ -17,5 +17,15 @@
         width:calc(100% - 280px);
         &__inner{
         }
+        &__tit{
+            font-size:30px;
+            font-weight:600;
+            color:#000;
+        }
+        &__top{
+            display:flex;
+            align-items:flex-end;
+            margin-bottom:20px;
+        }
     }
 }

@@ -60,3 +60,17 @@
 .layout-content {
   width: calc(100% - 280px);
 }
+.layout-content__tit {
+  font-size: 30px;
+  font-weight: 600;
+  color: #000;
+}
+.layout-content__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-bottom: 20px;
+}

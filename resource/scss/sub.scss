@@ -44,6 +44,14 @@
                 background:linear-gradient(94deg, rgba(2,154,251,1) 0%, rgba(0,89,198,1) 100%);
                 font-weight:500;
                 color:#fff;
+                &::before{
+                    @include pos(absolute, $t:50%, $r:15px);
+                    width:8px;
+                    height:11px;
+                    background:url('../image/common/icon/icon-clamp__right--white.png') no-repeat 90% center/8px 11px;
+                    transform:translateY(-50%);
+                    content:"";
+                }
             }
             .lnb-depth--02{
                 display:block;
@@ -104,20 +112,6 @@
         }
     }
 }
-.layout{
-    &-content{
-        &__tit{
-            font-size:30px;
-            font-weight:600;
-            color:#000;
-        }
-        &__top{
-            display:flex;
-            align-items:flex-end;
-            margin-bottom:20px;
-        }
-    }
-}
 .location{
     display:flex;
     align-items: center;
@@ -139,6 +133,32 @@
                 background:url('../image/sub/icon/icon-clamp--location.png') no-repeat 0 0/7px 10px;
                 content:""
             }
+        }
+    }
+}
+.paging{
+    display:flex;
+    justify-content: center;
+    width:100%;
+    margin-top:30px;
+    margin-bottom:80px;
+    a{
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        width:36px;
+        height:36px;
+        font-size:15px;
+        font-weight:500;
+        border:1px solid #dde3e6;
+        border-radius:100%;
+        background-color:#fff;
+        &.active{
+            background-color:#003471;
+            color:#fff;
+        }
+        + a{
+            margin-left:6px;
         }
     }
 }
