@@ -162,3 +162,13 @@
         }
     }
 }
+.el{
+    &-hyphen{
+        width:10px;
+        height:2px;
+        background-color:#a0a8ab;
+    }
+    &-essential{
+        color:#f18200;
+    }
+}

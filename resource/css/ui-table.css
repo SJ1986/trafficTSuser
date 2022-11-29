@@ -71,8 +71,11 @@
   vertical-align: middle;
   content: "";
 }
+.table-basic tr.has-form td {
+  padding: 5px 10px;
+}
 .table-basic th, .table-basic td {
-  padding: 15px 20px;
+  padding: 15px 25px;
   font-size: 16px;
   font-weight: 400;
   color: #000;
@@ -89,4 +92,14 @@
 }
 .table-basic td a {
   font-weight: 500;
+}
+.table-basic--row tr:first-child th, .table-basic--row tr:first-child td {
+  border-top: 2px solid #305363;
+}
+.table-basic--row tr:last-child th, .table-basic--row tr:last-child td {
+  border-bottom: 1px solid #eceff0;
+}
+.table-basic--row th {
+  border-top: 1px solid #eceff0;
+  text-align: left;
 }

@@ -22,10 +22,26 @@
             font-weight:600;
             color:#000;
         }
+        &__subtit{
+            font-size:22px;
+            font-weight:500;
+            color:#000;
+        }
         &__top{
             display:flex;
             align-items:flex-end;
-            margin-bottom:20px;
+            margin-bottom:30px;
+        }
+    }
+}
+.table{
+    &-wrap{
+        + .layout{
+            &-content{
+                &__subtit{
+                    margin-top:30px;
+                }
+            }
         }
     }
 }

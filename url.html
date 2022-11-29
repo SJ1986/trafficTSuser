@@ -317,11 +317,57 @@
         data: [
           {
             depth1: '마이페이지',
-            depth2: '',
+            depth2: '내가 올린 자료',
             path: './sub/mydataUploadList.html',
             status: 'end',
             create: '',
             log: [{ date: '2022.11.22', text: '페이지 생성' }],
+          },
+          {
+            depth1: '마이페이지',
+            depth2: '내가 받은 자료',
+            path: './sub/mydataDownloadList.html',
+            status: 'end',
+            create: '',
+            log: [{ date: '2022.11.22', text: '페이지 생성' }],
+          },
+          {
+            depth1: '차량등록',
+            depth2: '임시운행차량 등록, 보험일자 가입등록',
+            path: './sub/mydataRegistCar.html',
+            status: 'end',
+            create: '',
+            log: [{ date: '2022.11.29', text: '페이지 생성' }],
+          },
+          {
+            depth1: '차량관리',
+            depth2: '담당자 수정, 보험가입일자 수정',
+            path: './sub/mydataManageCar.html',
+            status: 'stay',
+            create: '',
+            log: [
+              //{ date: '2022.11.22', text: '페이지 생성' }
+            ],
+          },
+          {
+            depth1: '권한위임',
+            depth2: '',
+            path: './sub/mydataDelegateRight.html',
+            status: 'stay',
+            create: '',
+            log: [
+              //{ date: '2022.11.22', text: '페이지 생성' }
+            ],
+          },
+          {
+            depth1: 'openApi',
+            depth2: '',
+            path: './sub/mydataOpenApi.html',
+            status: 'end',
+            create: '',
+            log: [
+              //{ date: '2022.11.22', text: '페이지 생성' }
+            ],
           },
         ]
         },
@@ -603,6 +649,8 @@
               text = '제거';
             } else if (val === 'moding') {
               text = '수정중';
+            } else if (val === 'stay') {
+              text = '대기중';
             }
 
             return val.length ? '<span class="index-status index-status--' + val + '">' + text + '</span>' : '';

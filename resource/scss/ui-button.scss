@@ -14,7 +14,15 @@ footer{
 }
 .btn{
     height:40px;
+    font-size:16px;
+    border-radius:5px;
     vertical-align:middle;
+    + .btn{
+        margin-left:5px;
+    }
+    &-row{
+        display:flex;
+    }
     &--report{
         height:36px;
         padding:0 17px;
@@ -32,5 +40,49 @@ footer{
         margin-left:3px;
         border-radius:4px;
         background:#0053b3 url('../image/common/icon/icon-sch.png') no-repeat center center/auto;
+    }
+    &-wrap{
+        button{
+            height:50px;
+        }
+    }
+    &-width{
+        &--s{
+            width:100px
+        }
+        &--m{
+            width:150px
+        }
+        &--l{
+            width:190px
+        }
+    }
+    &-color{
+        &--white{
+            background-color:#fff;
+            color:#747478;
+            border:1px solid #dce3e5;
+            &:hover{
+                background-color:#eee;
+                font-weight:bold;
+            }
+        }
+        &--navy{
+            background-color:#003471;
+            color:#fff;
+            &:hover{
+                background-color:#2e7bd4;
+                color:#fff;
+            }
+        }
+        &--gray{
+            background-color:#ccc;
+            color:#000;
+            &:hover{
+                background-color:#fff;
+                color:#000;
+                border:1px solid #ccc;
+            }
+        }
     }
 }

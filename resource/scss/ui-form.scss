@@ -4,10 +4,10 @@
 
 input, select{
     height:40px;
-    padding:0 20px;
+    padding:0 15px;
     padding-right:40px;
     font-size:15px;
-    font-weight:500;
+    font-weight:400;
     color:#000;
     border:1px solid #e0e4e6;
     border-radius:4px;
@@ -28,6 +28,14 @@ input, select{
 select{
     letter-spacing: -0.05em;
     background:#fff url('../image/common/icon/icon-clamp__down.png') no-repeat 95% center/auto;
+}
+textarea{
+    padding:10px;
+    outline:none;
+    resize:none;
+    border-radius:3px;
+    border:1px solid #e0e4e6;
+    font-size:14px;
 }
 
 .sch{
@@ -58,5 +66,34 @@ select{
             display:flex;
             justify-content: center;
         }
+    }
+}
+.ui{
+    &-form{
+        &-row{
+            display:flex;
+        }
+        &-width{
+            &--m{
+                width:346px
+            }
+            &--s{
+                width:158px
+            }
+            &--full{
+                width:100%;
+            }
+        }
+        &-height{
+            &--100{
+                height:100px;
+            }
+        }
+        &-block{
+            position:relative;
+        }
+    }
+    &-scroll{
+        overflow:auto;
     }
 }

@@ -78,9 +78,20 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.justify-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
 
 .ml-auto {
   margin-left: auto;
+}
+.mt-30 {
+  margin-top: 30px;
+}
+.mb-80 {
+  margin-bottom: 80px;
 }
 
 .lists li {

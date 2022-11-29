@@ -54,7 +54,17 @@ footer.sub .btn--report {
 
 .btn {
   height: 40px;
+  font-size: 16px;
+  border-radius: 5px;
   vertical-align: middle;
+}
+.btn + .btn {
+  margin-left: 5px;
+}
+.btn-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 .btn--report {
   height: 36px;
@@ -73,4 +83,42 @@ footer.sub .btn--report {
   margin-left: 3px;
   border-radius: 4px;
   background: #0053b3 url("../image/common/icon/icon-sch.png") no-repeat center center/auto;
+}
+.btn-wrap button {
+  height: 50px;
+}
+.btn-width--s {
+  width: 100px;
+}
+.btn-width--m {
+  width: 150px;
+}
+.btn-width--l {
+  width: 190px;
+}
+.btn-color--white {
+  background-color: #fff;
+  color: #747478;
+  border: 1px solid #dce3e5;
+}
+.btn-color--white:hover {
+  background-color: #eee;
+  font-weight: bold;
+}
+.btn-color--navy {
+  background-color: #003471;
+  color: #fff;
+}
+.btn-color--navy:hover {
+  background-color: #2e7bd4;
+  color: #fff;
+}
+.btn-color--gray {
+  background-color: #ccc;
+  color: #000;
+}
+.btn-color--gray:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc;
 }

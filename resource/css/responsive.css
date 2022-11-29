@@ -131,7 +131,7 @@
     font-weight: 500;
     color: #000;
   }
-  .table-basic tr:hover td {
+  .table-basic--col tr:hover td {
     background-color: #fff9f2;
   }
 }

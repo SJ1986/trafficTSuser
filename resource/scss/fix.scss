@@ -25,11 +25,24 @@
     &-between{
         justify-content: space-between;
     }
+    &-center{
+        justify-content: center;
+    }
 }
 .m{
     &l{
         &-auto{
             margin-left:auto;
+        }
+    }
+    &t{
+        &-30{
+            margin-top:30px;
+        }
+    }
+    &b{
+        &-80{
+            margin-bottom:80px;
         }
     }
 }

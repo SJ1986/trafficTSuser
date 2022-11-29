@@ -211,3 +211,12 @@
 .paging a + a {
   margin-left: 6px;
 }
+
+.el-hyphen {
+  width: 10px;
+  height: 2px;
+  background-color: #a0a8ab;
+}
+.el-essential {
+  color: #f18200;
+}
