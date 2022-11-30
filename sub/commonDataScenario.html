@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="resource/css/ux-common.css">
-    <link rel="stylesheet" href="resource/css/lib/fullpage.css">
-    <link rel="stylesheet" href="resource/css/main.css">
-
+    <link rel="stylesheet" href="../resource/css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="../resource/css/lib/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="../resource/css/ux-common.css">
+    <link rel="stylesheet" href="../resource/css/sub.css">
+    <link rel="stylesheet" href="../resource/css/mypage.css">
     <title>TS 한국교통안전공단</title>
 </head>
 <body>
@@ -302,244 +303,88 @@
             <div class="container__inner">
                 <div class="content">
                     <div class="content__inner">
-                        <div id="fullpage">
-                            <div class="fullpage-block fullpage-block--main">
-                                <div class="fullpage-block__inner">
-                                    <span class="fullpage-block--main__img">
-                                        <img src="resource/image/main/img-main-visual--logo.png" alt="TS 한국교통안전공단">
-                                    </span>
-                                    <h2 class="fullpage-block--main__tit">
-                                        자율주행차<br/>데이터 공유센터
-                                    </h2>
-                                    <div class="fullpage-block--main__boxes fullpage-box">
-                                        <div class="fullpage-box--notice">
-                                            <h4 class="fullpage-box__tit d-flex align-center justify-between">
-                                                공지사항
-                                                <a href="" title="공지사항 더보기" class="link-more">
-                                                    <span></span>
-                                                </a>
-                                            </h4>
-                                            <ul class="lists lists-cir lists-cir--s">
+
+                        <div class="layout-container layout-full">
+                            <div class="layout-container__inner layout-container--row">
+                                <div class="lnb">
+                                    <h3 class="lnb__tit">MY DATA</h3>
+                                    <div class="lnb-list">
+                                        <div class="lnb-item">
+                                            <a href="">내가 올린 자료</a>
+                                        </div>
+                                        <div class="lnb-item">
+                                            <a href="">내가 받은 자료</a>
+                                        </div>
+                                        <div class="lnb-item">
+                                            <a href="">차량등록</a>
+                                        </div>
+                                        <div class="lnb-item is-active">
+                                            <a href="">차량관리</a>
+                                            <ul class="lnb-depth--02 lists lists-cir--s">
                                                 <li>
-                                                    <a href="">임시운행 자율주행차 운행 정보 보...............</a>
-                                                    <span>22.11.04</span>
+                                                    <a href="">임시운행차량 등록</a>
                                                 </li>
                                                 <li>
-                                                    <a href="">임시운행 자율주행차 운행 정보...............</a>
-                                                    <span>22.11.04</span>
-                                                </li>
-                                                <li>
-                                                    <a href="">자율주행차 데이터 공유센터...............</a>
-                                                    <span>22.11.04</span>
-                                                </li>
-                                                <li>
-                                                    <a href="">한국교통안전공단 자율주행차..차..차..차..차..</a>
-                                                    <span>22.11.04</span>
-                                                </li>
-                                                <li>
-                                                    <a href="">상반기 운행정보 제출 자료입력...............</a>
-                                                    <span>22.11.04</span>
+                                                    <a href="">보험가입일자 등록</a>
                                                 </li>
                                             </ul>
                                         </div>
-                                        <div class="fullpage-box--trend">
-                                            <h4 class="fullpage-box__tit d-flex align-center justify-between">
-                                                자율주행 최신동향
-                                                <a href="" title="자율주행 최신동향 더보기" class="link-more">
-                                                    <span></span>
-                                                </a>
-                                            </h4>
-                                            <ul class="lists lists-cir lists-cir--s">
+                                        <div class="lnb-item">
+                                            <a href="">권한위임</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="layout-content">
+                                    <div class="layout-content__inner">
+                                        <div class="layout-content__top">
+                                            <h4 class="layout-content__tit">차량관리</h4>
+                                            <ul class="location ml-auto">
                                                 <li>
-                                                    <a href="">자율주행 국내외 기술동향 (20년 1...</a>
-                                                    <span>22.11.04</span>
+                                                    <img src="../resource/image/sub/icon/icon-home.png" alt="홈">
                                                 </li>
-                                                <li>
-                                                    <a href="">임시운행 자율주행차 운행 정보...</a>
-                                                    <span>22.11.04</span>
-                                                </li>
-                                                <li>
-                                                    <a href="">자율주행차 데이터 공유센터...</a>
-                                                    <span>22.11.04</span>
-                                                </li>
-                                                <li>
-                                                    <a href="">한국교통안전공단 자율주행차..</a>
-                                                    <span>22.11.04</span>
-                                                </li>
-                                                <li>
-                                                    <a href="">상반기 운행정보 제출 자료입력...</a>
-                                                    <span>22.11.04</span>
-                                                </li>
+                                                <li>MY DATA</li>
+                                                <li>차량관리</li>
                                             </ul>
                                         </div>
-                                        <div class="fullpage-box--intro fullpage-box__quickLink">
-                                            <a href="">
-                                                <span class="fullpage-box__img">
-                                                    <img src="resource/image/main/img-main-box01.png" alt="">
-                                                </span>
-                                                <span class="fullpage-box__txt">
-                                                    <em class="fullpage-box__cap">자율주행차</em>
-                                                    데이터 공유센터 소개
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="fullpage-box--report fullpage-box__quickLink">
-                                            <a href="">
-                                                <span class="fullpage-box__img">
-                                                    <img src="resource/image/main/img-main-box02.png" alt="">
-                                                </span>
-                                                <span class="fullpage-box__txt">
-                                                    <em class="fullpage-box__cap">운행정보보고</em>
-                                                    운행정보 보고서 열람
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="fullpage-box--download fullpage-box__quickLink">
-                                            <a href="">
-                                                <span class="fullpage-box__img">
-                                                    <img src="resource/image/main/img-main-box03.png" alt="">
-                                                </span>
-                                                <span class="fullpage-box__txt">
-                                                    <em class="fullpage-box__cap">데이터공유협의체</em>
-                                                    가입신청서 다운로드
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="fullpage-box--share fullpage-box__quickLink">
-                                            <a href="">
-                                                <span class="fullpage-box__img">
-                                                    <img src="resource/image/main/img-main-box04.png" alt="">
-                                                </span>
-                                                <span class="fullpage-box__txt">
-                                                    <em class="fullpage-box__cap">데이터 공유센터 시설이용</em>
-                                                    차량 플랫폼 공유
-                                                </span>
-                                            </a>
-                                        </div>
+                                        
                                     </div>
                                 </div>
-                            </div>
-                            <div class="fullpage-block  fullpage-block--menu">
-                                <div class="fullpage-block__inner">
-                                    <div class="fullpage-block--menu__boxes fullpage-box">
-                                        <div class="fullpage-box--v2x fullpage-box__quickLink">
-                                            <a href="">
-                                                <em></em>
-                                                <span>
-                                                    <em>V2X 데이터 영상</em>
-                                                    V2X Data
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="fullpage-box--drivingImg fullpage-box__quickLink">
-                                            <a href="">
-                                                <em></em>
-                                                <span>
-                                                    <em>주행영상</em>
-                                                    Driving image
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="fullpage-box--sensorData fullpage-box__quickLink">
-                                            <a href="">
-                                                <em></em>
-                                                <span>
-                                                    <em>센서 데이터</em>
-                                                    Sensor Data
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="fullpage-box--learning fullpage-box__quickLink">
-                                            <a href="">
-                                                <em></em>
-                                                <span>
-                                                    <em>학습 데이터</em>
-                                                    Learning Data
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="fullpage-box--accident fullpage-box__quickLink">
-                                            <a href="">
-                                                <em></em>
-                                                <span>
-                                                    <em>교통사고</em>
-                                                    a traffic accident
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="fullpage-box--report fullpage-box__quickLink">
-                                            <a href="">
-                                                <em></em>
-                                                <span>
-                                                    <em>운행정보 보고서 </em>
-                                                    Operation Information Report
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="fullpage-box--shareCenter">
-                                            <a href="" class="banner-link">
-                                                <span class="banner-link__tit">
-                                                    <q><em>자율주행차</em> 데이터 공유센터</q>
-                                                    <em><b>open</b> <strong>API</strong></em> 바로가기
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="fullpage-box--admit">
-                                            <a href="" class="banner-link">
-                                                <span class="banner-link__tit">
-                                                    <q><em>My Data 데이터 공유센터</em></q>
-                                                    임시운행 차량등록
-                                                </span>
-                                            </a>
-                                        </div>
-                                        <div class="fullpage-box--useGuide">
-                                            <a href="" class="banner-link">
-                                                <span class="banner-link__tit">
-                                                    <q><em>데이터 공유센터</em></q>
-                                                    공유센터 이용안내
-                                                </span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="fullpage-block  fullpage-block--footer">
-                                <footer>
-                                    <div class="footer__inner">
-                                        <span class="footer-logo">
-                                            <img src="resource/image/common/img-logo-head.png" alt="">
-                                        </span>
-                                        <div class="d-flex align-end">
-                                            <address>
-                                                <span>주소</span> 18247) 경기도 화성시 송산면 삼존로 200 자동차안전연구원｜<span>문의전화</span> 1577-0990
-                                            </address>
-                                            <button type="button" class="btn btn--report">품질오류 신고 및 확인</button>
-                                            <a href="" class="footer-link">
-                                                <img src="resource/image/common/img-main-visual--logo01.png" alt="">
-                                            </a>
-                                            <a href="" class="footer-link" target="_blank">
-                                                <img src="resource/image/common/img-main-visual--logo02.png" alt="">
-                                            </a>
-                                        </div>
-                                        <p class="copyRight">©2022. <span>TS Corp.</span>  All rights reserved.</p>
-                                    </div>
-                                </footer>
                             </div>
                         </div>
-                        <ul id="sidePaging">
-                            <li data-menuanchor="first" class="active"><a href="#first">First section</a></li>
-                            <li data-menuanchor="second"><a href="#second">Second section</a></li>
-                        </ul>
+
                     </div>
                 </div>
             </div>
         </div>
+        <footer>
+            <div class="footer__inner">
+                <span class="footer-logo">
+                    <img src="../resource/image/main/img-logo-head-color.png" alt="">
+                </span>
+                <div class="d-flex align-end">
+                    <address>
+                        <span>주소</span> 18247) 경기도 화성시 송산면 삼존로 200 자동차안전연구원｜<span>문의전화</span> 1577-0990
+                    </address>
+                    <button type="button" class="btn btn--report">품질오류 신고 및 확인</button>
+                    <a href="" class="footer-link">
+                        <img src="../resource/image/common/img-main-visual--logo01.png" alt="">
+                    </a>
+                    <a href="" class="footer-link" target="_blank">
+                        <img src="../resource/image/common/img-main-visual--logo02.png" alt="">
+                    </a>
+                </div>
+                <p class="copyRight">©2022. <span>TS Corp.</span>  All rights reserved.</p>
+            </div>
+        </footer>
     </div>
     
-    <script type="text/javascript" src="resource/js/lib/jquery/jquery-3.6.1.min.js"></script>
-    <script type="text/javascript" src="resource/js/lib/fullpage.js"></script>
-    <script type="text/javascript" src="resource/js/lib/tweenmax.min.js"></script>
-    <script type="text/javascript" src="resource/js/common.js"></script>
-    <script type="text/javascript" src="resource/js/main.js"></script>
+    <script type="text/javascript" src="../resource/js/lib/jquery/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="../resource/js/lib/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../resource/js/lib/tweenmax.min.js"></script>
+    <script type="text/javascript" src="../resource/js/lib/moment.min.js"></script>
+    <script type="text/javascript" src="../resource/js/lib/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../resource/js/lib/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="../resource/js/common.js"></script>
+    <script type="text/javascript" src="../resource/js/sub.js"></script>
 </body>
 </html>

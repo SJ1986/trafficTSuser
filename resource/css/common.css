@@ -213,6 +213,7 @@ header.sub .side-menu__btn span {
 }
 .gnb > a {
   font-size: 18px;
+  font-weight: 500;
   color: #fff;
 }
 .gnb > div + a {

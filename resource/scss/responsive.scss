@@ -126,8 +126,8 @@
             &--v2x{
               a{
                 &:hover{
-                  &::before{
-                      background:no-repeat 50%/auto url('../image/main/img-menu-quickLink--01-on.png');
+                > em{
+                    background:no-repeat 50%/auto url('../image/main/img-menu-quickLink--01-on.png');
                   }
                 }
               }
@@ -135,8 +135,8 @@
             &--drivingImg{
               a{
                 &:hover{
-                  &::before{
-                      background:no-repeat 50%/auto url('../image/main/img-menu-quickLink--02-on.png');
+                > em{
+                    background:no-repeat 50%/auto url('../image/main/img-menu-quickLink--02-on.png');
                   }
                 }
               }
@@ -144,8 +144,8 @@
             &--sensorData{
               a{
                 &:hover{
-                  &::before{
-                      background:no-repeat 50%/auto url('../image/main/img-menu-quickLink--03-on.png');
+                > em{
+                    background:no-repeat 50%/auto url('../image/main/img-menu-quickLink--03-on.png');
                   }
                 }
               }
@@ -153,8 +153,8 @@
             &--learning{
               a{
                 &:hover{
-                  &::before{
-                      background:no-repeat 50%/auto url('../image/main/img-menu-quickLink--04-on.png');
+                > em{
+                    background:no-repeat 50%/auto url('../image/main/img-menu-quickLink--04-on.png');
                   }
                 }
               }
@@ -162,8 +162,8 @@
             &--accident{
               a{
                 &:hover{
-                  &::before{
-                      background:no-repeat 49%/auto url('../image/main/img-menu-quickLink--05-on.png');
+                > em{
+                    background:no-repeat 49%/auto url('../image/main/img-menu-quickLink--05-on.png');
                   }
                 }
               }
@@ -171,8 +171,8 @@
             &--report{
               a{
                 &:hover{
-                  &::before{
-                      background:no-repeat 49%/auto url('../image/main/img-menu-quickLink--06-on.png');
+                > em{
+                    background:no-repeat 49%/auto url('../image/main/img-menu-quickLink--06-on.png');
                   }
                 }
               }

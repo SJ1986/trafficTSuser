@@ -276,12 +276,11 @@
   transition: all 0.1s ease-in-out;
   text-align: center;
 }
-.fullpage-block--menu .fullpage-box__quickLink a::before {
+.fullpage-block--menu .fullpage-box__quickLink a > em {
   display: block;
   width: 73px;
   height: 52px;
   text-align: center;
-  content: "";
 }
 .fullpage-block--menu .fullpage-box__quickLink a span {
   display: block;
@@ -306,7 +305,7 @@
 .fullpage-block--menu .fullpage-box--v2x a {
   border-top-left-radius: 10px;
 }
-.fullpage-block--menu .fullpage-box--v2x a::before {
+.fullpage-block--menu .fullpage-box--v2x a > em {
   background: no-repeat 50%/auto url("../image/main/img-menu-quickLink--01.png");
 }
 .fullpage-block--menu .fullpage-box--v2x::before {
@@ -318,7 +317,7 @@
   border-left: 1px dashed rgba(204, 204, 204, 0.4);
   border-bottom: 1px dashed rgba(204, 204, 204, 0.4);
 }
-.fullpage-block--menu .fullpage-box--drivingImg a::before {
+.fullpage-block--menu .fullpage-box--drivingImg a > em {
   background: no-repeat 50%/auto url("../image/main/img-menu-quickLink--02.png");
 }
 .fullpage-block--menu .fullpage-box--sensorData {
@@ -331,7 +330,7 @@
 .fullpage-block--menu .fullpage-box--sensorData a {
   border-top-right-radius: 10px;
 }
-.fullpage-block--menu .fullpage-box--sensorData a::before {
+.fullpage-block--menu .fullpage-box--sensorData a > em {
   background: no-repeat 50%/auto url("../image/main/img-menu-quickLink--03.png");
 }
 .fullpage-block--menu .fullpage-box--sensorData::before {
@@ -345,7 +344,7 @@
 .fullpage-block--menu .fullpage-box--learning a {
   border-bottom-left-radius: 10px;
 }
-.fullpage-block--menu .fullpage-box--learning a::before {
+.fullpage-block--menu .fullpage-box--learning a > em {
   background: no-repeat 50%/auto url("../image/main/img-menu-quickLink--04.png");
 }
 .fullpage-block--menu .fullpage-box--learning::before {
@@ -356,7 +355,7 @@
   grid-column: 2/3;
   border-left: 1px dashed rgba(204, 204, 204, 0.4);
 }
-.fullpage-block--menu .fullpage-box--accident a::before {
+.fullpage-block--menu .fullpage-box--accident a > em {
   background: no-repeat 50%/auto url("../image/main/img-menu-quickLink--05.png");
 }
 .fullpage-block--menu .fullpage-box--report {
@@ -368,7 +367,7 @@
 .fullpage-block--menu .fullpage-box--report a {
   border-bottom-right-radius: 10px;
 }
-.fullpage-block--menu .fullpage-box--report a::before {
+.fullpage-block--menu .fullpage-box--report a > em {
   background: no-repeat 50%/auto url("../image/main/img-menu-quickLink--06.png");
 }
 .fullpage-block--menu .fullpage-box--report::before {
@@ -499,7 +498,7 @@
   width: 100%;
   font-size: 16px;
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.7);
   white-space: nowrap;
 }
 .fullpage-box--trend .lists li + li, .fullpage-box--notice .lists li + li {

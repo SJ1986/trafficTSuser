@@ -68,22 +68,22 @@
     font-weight: 500;
     color: #1180ed;
   }
-  .fullpage-block--menu .fullpage-box--v2x a:hover::before {
+  .fullpage-block--menu .fullpage-box--v2x a:hover > em {
     background: no-repeat 50%/auto url("../image/main/img-menu-quickLink--01-on.png");
   }
-  .fullpage-block--menu .fullpage-box--drivingImg a:hover::before {
+  .fullpage-block--menu .fullpage-box--drivingImg a:hover > em {
     background: no-repeat 50%/auto url("../image/main/img-menu-quickLink--02-on.png");
   }
-  .fullpage-block--menu .fullpage-box--sensorData a:hover::before {
+  .fullpage-block--menu .fullpage-box--sensorData a:hover > em {
     background: no-repeat 50%/auto url("../image/main/img-menu-quickLink--03-on.png");
   }
-  .fullpage-block--menu .fullpage-box--learning a:hover::before {
+  .fullpage-block--menu .fullpage-box--learning a:hover > em {
     background: no-repeat 50%/auto url("../image/main/img-menu-quickLink--04-on.png");
   }
-  .fullpage-block--menu .fullpage-box--accident a:hover::before {
+  .fullpage-block--menu .fullpage-box--accident a:hover > em {
     background: no-repeat 49%/auto url("../image/main/img-menu-quickLink--05-on.png");
   }
-  .fullpage-block--menu .fullpage-box--report a:hover::before {
+  .fullpage-block--menu .fullpage-box--report a:hover > em {
     background: no-repeat 49%/auto url("../image/main/img-menu-quickLink--06-on.png");
   }
   .fullpage-box--notice .lists li:hover::before, .fullpage-box--trend .lists li:hover::before {
