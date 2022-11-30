@@ -252,6 +252,7 @@
   background-color: rgba(0, 19, 63, 0.9);
 }
 .fullpage-block--menu .fullpage-box__quickLink a {
+  overflow: hidden;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -459,7 +460,7 @@
   display: block;
 }
 .fullpage-block--footer {
-  height: 239px !important;
+  height: 216px !important;
   padding-top: 0 !important;
 }
 .fullpage-block--footer .fp-tableCell {

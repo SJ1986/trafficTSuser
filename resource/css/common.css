@@ -377,15 +377,15 @@ footer {
 footer address {
   margin-right: 20px;
   margin-bottom: 10px;
-  font-size: 16px;
+  font-size: 15px;
   color: #fff;
 }
 footer address span {
   color: #a3a6ab;
 }
 footer .copyRight {
-  margin-top: 18px;
-  font-size: 16px;
+  margin-top: 9px;
+  font-size: 14px;
   color: #a3a6ab;
 }
 footer .copyRight span {
@@ -406,7 +406,7 @@ footer.sub .copyRight {
 }
 .footer-logo {
   display: inline-block;
-  margin-bottom: 50px;
+  margin-bottom: 0;
 }
 .footer-link {
   display: -webkit-box;
@@ -420,7 +420,7 @@ footer.sub .copyRight {
           justify-content: center;
   width: 200px;
   height: 60px;
-  margin-left: 60px;
+  margin-left: auto;
   background-color: #fff;
 }
 .footer-link + .footer-link {

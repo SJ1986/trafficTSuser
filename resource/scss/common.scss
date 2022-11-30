@@ -318,15 +318,15 @@ footer{
     address{
         margin-right:20px;
         margin-bottom:10px;
-        font-size:16px;
+        font-size:15px;
         color:#fff;
         span{
             color:#a3a6ab;
         }
     }
     .copyRight{
-        margin-top:18px;
-        font-size:16px;
+        margin-top:9px;
+        font-size:14px;
         color:#a3a6ab;
         span{
             color:#3d8aab;
@@ -350,7 +350,7 @@ footer{
     }
     &-logo{
         display:inline-block;
-        margin-bottom:50px;
+        margin-bottom:0;
     }
     &-link{
         display:flex;
@@ -358,7 +358,7 @@ footer{
         justify-content:center;
         width:200px;
         height:60px;
-        margin-left:60px;
+        margin-left:auto;
         background-color:#fff;
         + .footer-link{
             margin-left:10px;
