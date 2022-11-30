@@ -243,6 +243,16 @@
                             z-index:1;
                             transition:all .1s ease-in-out;
                             text-align:center;
+                            *:not(q){
+                                z-index:1;
+                            }
+                            > q{
+                                @include pos(absolute, $t:50%, $l:50%);
+                                display:block;
+                                width:100%;
+                                height:100%;
+                                transform:translate(-50%, -50%);
+                            }
                             > em{
                                 display:block;
                                 width:73px;
@@ -272,6 +282,9 @@
                         border-bottom:1px dashed rgb(204 204 204 / 40%);
                         a{
                             border-top-left-radius: 10px;
+                            > q{
+                                border-top-left-radius: 10px;
+                            }
                             > em{
                                 background:no-repeat 50%/auto url('../image/main/img-menu-quickLink--01.png');
                             }
@@ -299,6 +312,9 @@
                         border-bottom:1px dashed rgb(204 204 204 / 40%);
                         a{
                             border-top-right-radius: 10px;
+                            > q{
+                                border-top-right-radius: 10px;
+                            }
                             > em{
                                 background:no-repeat 50%/auto url('../image/main/img-menu-quickLink--03.png');
                             }
@@ -313,6 +329,9 @@
                         border-bottom-left-radius: 10px;
                         a{
                             border-bottom-left-radius: 10px;
+                            > q{
+                                border-bottom-left-radius: 10px;
+                            }
                             > em{
                                 background:no-repeat 50%/auto url('../image/main/img-menu-quickLink--04.png');
                             }
@@ -338,6 +357,9 @@
                         border-left:1px dashed rgb(204 204 204 / 40%);
                         a{
                             border-bottom-right-radius: 10px;
+                            > q{
+                                border-bottom-right-radius: 10px;
+                            }
                             > em{
                                 background:no-repeat 50%/auto url('../image/main/img-menu-quickLink--06.png');
                             }
