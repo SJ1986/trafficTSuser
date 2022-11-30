@@ -66,6 +66,15 @@
         margin: 20px 0;
       }
 
+      .index-links{
+        overflow:hidden;
+      }
+      .index-links a{box-sizing:border-box;}
+      .index-links a:hover{
+        background-color:#333;
+        color:#fff;
+      }
+
       .index-bottom {
         position: fixed;
         z-index: 1000;
@@ -175,10 +184,16 @@
       .index-table > table > tbody > tr > th:first-child,
       .index-table > table > tbody > tr > td:first-child {
         border-left-width: 1px;
+        text-align:center;
       }
 
       .index-table > table > thead > tr > th {
         border-top-width: 1px;
+      }
+
+      .index-table > table > thead > tr > th:nth-child(2),
+      .index-table > table > thead > tr > td:nth-child(2){
+        text-align:center;
       }
 
       .index-table > table > thead > tr > th,
@@ -229,6 +244,7 @@
 
       .index-log__item {
         position: relative;
+        height:18px;
         padding-left: 80px;
       }
 
@@ -254,7 +270,7 @@
       <h1 class="index-title"></h1>
       <div class="index-gnb">
         <div class="index-links">
-
+          <a href="guide/guide.html" target="_blank">레이어 팝업 가이드</a>
         </div>
       </div>
       <div class="index-bottom">
@@ -303,12 +319,14 @@
         depth1: '인덱스',
         data: [
           {
+            id:'US_MA_01, US_MA_02',
             depth1: '인덱스',
             depth2: '',
+            depth3: '',
             path: 'index.html',
             status: 'end',
-            create: '',
-            log: [{ date: '2022.11.22', text: '페이지 생성' }],
+            create: '2022.11.22',
+            log: [{ date: '2022.11.28', text: '작업 완료' }],
           },
         ]
         },
@@ -316,87 +334,108 @@
         depth1: '마이페이지',
         data: [
           {
+            id:'US_DA_01_list',
             depth1: '마이페이지',
             depth2: '내가 올린 자료',
+            depth3: '',
             path: './sub/mydataUploadList.html',
             status: 'end',
-            create: '',
-            log: [{ date: '2022.11.22', text: '페이지 생성' }],
+            create: '2022.11.28',
+            log: [{ date: '2022.11.29', text: '작업 완료' }],
           },
           {
+            id:'US_DA_02_list',
             depth1: '마이페이지',
             depth2: '내가 받은 자료',
+            depth3: '',
             path: './sub/mydataDownloadList.html',
             status: 'end',
-            create: '',
-            log: [{ date: '2022.11.22', text: '페이지 생성' }],
+            create: '2022.11.28',
+            log: [{ date: '2022.11.29', text: '작업 완료' }],
           },
           {
+            id:'US_DA_03_write',
             depth1: '차량등록',
             depth2: '임시운행차량 등록, 보험일자 가입등록',
+            depth3: '',
             path: './sub/mydataRegistCar.html',
             status: 'end',
-            create: '',
-            log: [{ date: '2022.11.29', text: '페이지 생성' }],
+            create: '2022.11.28',
+            log: [{ date: '2022.11.29', text: '작업 완료' }],
           },
           {
+            id:'US_DA_04_edit',
             depth1: '차량관리',
             depth2: '담당자 수정, 보험가입일자 수정',
+            depth3: '',
             path: './sub/mydataManageCar.html',
             status: 'stay',
             create: '',
             log: [
-              //{ date: '2022.11.22', text: '페이지 생성' }
+              //{ date: '2022.11.22', text: '' }
             ],
           },
           {
+            id:'',
             depth1: '권한위임',
             depth2: '',
+            depth3: '',
             path: './sub/mydataDelegateRight.html',
             status: 'stay',
             create: '',
             log: [
-              //{ date: '2022.11.22', text: '페이지 생성' }
-            ],
-          },
-          {
-            depth1: 'openApi',
-            depth2: '',
-            path: './sub/mydataOpenApi.html',
-            status: 'end',
-            create: '',
-            log: [
-              //{ date: '2022.11.22', text: '페이지 생성' }
+              //{ date: '2022.11.22', text: '' }
             ],
           },
         ]
         },
         {
+          depth1: 'openApi',
+          data: [
+            {
+              id:'',
+              depth1: 'openApi',
+              depth2: '',
+              depth3: '',
+              path: './sub/openApi.html',
+              status: 'end',
+              create: '2022.11.28',
+              log: [{ date: '2022.11.29', text: '작업 완료' }],
+            },
+          ]
+        },
+        {
           depth1: '공공데이터',
           data: [
             {
+              id:'',
               depth1: '일반시나리오테이터셋',
               depth2: '',
+              depth3: '',
               path: './sub/commonDataScenario.html',
               status: 'stay',
               create: '',
-              log: [{ date: '2022.11.22', text: '페이지 생성' }],
+              log: [{ date: '2022.11.22', text: '' }],
             },
             {
+              id:'',
               depth1: '엣지케이스 시나리오데이터셋',
               depth2: '',
+              depth3: '',
               path: './sub/commonDataEdgeCase.html',
               status: 'stay',
               create: '',
-              log: [{ date: '2022.11.22', text: '페이지 생성' }],
+              log: [{ date: '2022.11.22', text: '' }],
             },
             {
+              id:'',
               depth1: 'V2X 데이터셋',
               depth2: '',
+              depth3: '',
               path: './sub/commonDataV2x.html',
               status: 'stay',
               create: '',
-              log: [{ date: '2022.11.22', text: '페이지 생성' }],
+              log: [{ date: '2022.11.22', text: '' }],
             },
           ],
         },
@@ -404,52 +443,64 @@
           depth1: '협의체 데이터',
           data: [
             {
+              id:'',
               depth1: '일반시나리오테이터셋',
               depth2: '',
+              depth3: '',
               path: './sub/workDataScenario.html',
               status: 'ing',
               create: '',
-              log: [{ date: '2022.11.22', text: '페이지 생성' }],
+              log: [{ date: '2022.11.22', text: '' }],
             },
             {
+              id:'',
               depth1: '엣지케이스 시나리오데이터셋',
               depth2: '',
+              depth3: '',
               path: './sub/workDataEdgeCase.html',
               status: 'ing',
               create: '',
-              log: [{ date: '2022.11.22', text: '페이지 생성' }],
+              log: [{ date: '2022.11.22', text: '' }],
             },
             {
+              id:'',
               depth1: 'V2X 데이터셋',
               depth2: '',
+              depth3: '',
               path: './sub/workDataV2x.html',
               status: 'ing',
               create: '',
-              log: [{ date: '2022.11.22', text: '페이지 생성' }],
+              log: [{ date: '2022.11.22', text: '' }],
             },
             {
+              id:'',
               depth1: '공간정보 안내 및 신청',
               depth2: '',
+              depth3: '',
               path: './sub/workDataGuide.html',
               status: 'ing',
               create: '',
-              log: [{ date: '2022.11.22', text: '페이지 생성' }],
+              log: [{ date: '2022.11.22', text: '' }],
             },
             {
+              id:'',
               depth1: '',
               depth2: '',
+              depth3: '',
               path: './sub/workDataUpload.html',
               status: 'ing',
               create: '',
-              log: [{ date: '2022.11.22', text: '페이지 생성' }],
+              log: [{ date: '2022.11.22', text: '' }],
             },
             {
+              id:'',
               depth1: '',
               depth2: '',
+              depth3: '',
               path: './sub/workDataSet.html',
               status: 'ing',
               create: '',
-              log: [{ date: '2022.11.22', text: '페이지 생성' }],
+              log: [{ date: '2022.11.22', text: '' }],
             },
           ],
         },
@@ -457,28 +508,34 @@
           depth1: '운행정보보고',
           data: [
             {
+              id:'',
               depth1: '교통사고',
               depth2: '',
+              depth3: '',
               path: './sub/trafficAccident.html',
               status: 'ing',
               create: '',
-              log: [{ date: '2022.11.22', text: '페이지 생성' }],
+              log: [{ date: '2022.11.22', text: '' }],
             },
             {
+              id:'',
               depth1: '운행정보보고서',
               depth2: '',
+              depth3: '',
               path: './sub/driveInfoReport.html',
               status: 'ing',
               create: '',
-              log: [{ date: '2022.11.22', text: '페이지 생성' }],
+              log: [{ date: '2022.11.22', text: '' }],
             },
             {
+              id:'',
               depth1: '장치 및 기능변경',
               depth2: '',
+              depth3: '',
               path: './sub/equipChange.html',
               status: 'ing',
               create: '',
-              log: [{ date: '2022.11.22', text: '페이지 생성' }],
+              log: [{ date: '2022.11.22', text: '' }],
             },
           ]
         },
@@ -486,20 +543,24 @@
           depth1: '자율주행최신동향',
           data: [
             {
+              id:'',
               depth1: '자율주행최신동향',
               depth2: '',
+              depth3: '',
               path: './sub/autoDriveTrend.html',
               status: 'ing',
               create: '',
-              log: [{ date: '2022.11.22', text: '페이지 생성' }],
+              log: [{ date: '2022.11.22', text: '' }],
             },
             {
+              id:'',
               depth1: '공지사항',
               depth2: '',
+              depth3: '',
               path: './sub/autoDriveNotice.html',
               status: 'ing',
               create: '',
-              log: [{ date: '2022.11.22', text: '페이지 생성' }],
+              log: [{ date: '2022.11.22', text: '' }],
             },
           ]
         },
@@ -507,20 +568,24 @@
           depth1: '데이터 공유센터 시설이용',
           data: [
             {
+              id:'',
               depth1: '차량 플랫폼 공유',
               depth2: '',
+              depth3: '',
               path: './sub/shareCenterFlatform.html',
               status: 'ing',
               create: '',
-              log: [{ date: '2022.11.22', text: '페이지 생성' }],
+              log: [{ date: '2022.11.22', text: '' }],
             },
             {
+              id:'',
               depth1: '공유센터 이용안내',
               depth2: '',
+              depth3: '',
               path: './sub/shareCenterGuide.html',
               status: 'ing',
               create: '',
-              log: [{ date: '2022.11.22', text: '페이지 생성' }],
+              log: [{ date: '2022.11.22', text: '' }],
             },
           ]
         },
@@ -528,44 +593,54 @@
           depth1: '이용안내',
           data: [
             {
+              id:'',
               depth1: '데이터공유센터 소개',
               depth2: '',
+              depth3: '',
               path: './sub/userGuideIntro.html',
               status: 'ing',
               create: '',
-              log: [{ date: '2022.11.22', text: '페이지 생성' }],
+              log: [{ date: '2022.11.22', text: '' }],
             },
             {
+              id:'',
               depth1: '공공데이터',
               depth2: '',
+              depth3: '',
               path: './sub/userGuideData.html',
               status: 'ing',
               create: '',
-              log: [{ date: '2022.11.22', text: '페이지 생성' }],
+              log: [{ date: '2022.11.22', text: '' }],
             },
             {
+              id:'',
               depth1: '데이터공유 협의체',
               depth2: '',
+              depth3: '',
               path: './sub/userGuideCompany.html',
               status: 'ing',
               create: '',
-              log: [{ date: '2022.11.22', text: '페이지 생성' }],
+              log: [{ date: '2022.11.22', text: '' }],
             },
             {
+              id:'',
               depth1: '법령 및 지침',
               depth2: '',
+              depth3: '',
               path: './sub/userGuideTerms.html',
               status: 'ing',
               create: '',
-              log: [{ date: '2022.11.22', text: '페이지 생성' }],
+              log: [{ date: '2022.11.22', text: '' }],
             },
             {
+              id:'',
               depth1: '자율주행차 임시운행허가',
               depth2: '',
+              depth3: '',
               path: './sub/userGuideAutoDrivePermit.html',
               status: 'ing',
               create: '',
-              log: [{ date: '2022.11.22', text: '페이지 생성' }],
+              log: [{ date: '2022.11.22', text: '' }],
             },
           ]
         },
@@ -625,9 +700,11 @@
             return isPrint ? val.replace(/\n/g, '<br>') : '';
           };
           //var type = returnVal('type', 'depth2');
-          var depth1 = returnVal('depth1');
-          var depth2 = returnVal('depth2');
-          var path = (function () {
+            var id = returnVal('id');
+            var depth1 = returnVal('depth1');
+            var depth2 = returnVal('depth2');
+            var depth3 = returnVal('depth3');
+            var path = (function () {
             var val = sectionData[j].path;
             var href = '';
             if (val.match(/^\.\//g)) {
@@ -682,10 +759,16 @@
             //type +
             //'</td>' +
             '<td>' +
+            id +
+            '</td>' +
+            '<td>' +
             depth1 +
             '</td>' +
             '<td>' +
             depth2 +
+            '</td>' +
+            '<td>' +
+            depth3 +
             '</td>' +
             '<td>' +
             path +
@@ -725,6 +808,8 @@
           '<table>' +
           '<colgroup>' +
           '<col width="50px" />' +
+          '<col width="100px" />' +
+          '<col width="170px" />' +
           '<col width="170px" />' +
           '<col width="170px" />' +
           '<col width="" />' +
@@ -737,8 +822,10 @@
           '<tr>' +
           '<th>No</th>' +
           //'<th>type</th>' +
+          '<th>id</th>' +
           '<th>depth1</th>' +
           '<th>depth2</th>' +
+          '<th>depth3</th>' +
           '<th>path</th>' +
           '<th>status</th>' +
           '<th>create</th>' +
