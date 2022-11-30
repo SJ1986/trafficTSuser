@@ -226,6 +226,7 @@ header h1 {
   font-size: 13px;
 }
 .directory-tree__folder {
+  display:none;
   position: relative;
   padding-left: 25px;
   background: url("../image/common/icon/icon-folder.png") no-repeat 5px 2px;
@@ -239,14 +240,17 @@ header h1 {
   content: "";
 }
 .directory-tree__folder a{
+  display:inline-block;
   padding-bottom:2px;
   border-bottom:1px  solid #f1f1f1;
+  line-height:100%;
 }
 .directory-tree__folder a:hover{
   background-color:#eee;
   border-bottom:1px  solid #555;
 }
 .directory-tree__file {
+  display:none;
   position: relative;
   margin-left: -5px;
 }

@@ -211,12 +211,12 @@
                             <h3 class="el-tab__tit mt-50">폴더 구조</h3>
                             <div class="mt-20">
                                 <div class="directory-tree-wrap">
-                                    <ul class="directory-tree__folder">
+                                    <ul class="directory-tree__folder" style="display:block;">
                                         <li>
-                                            <a href="">tsUser</a>
+                                            <a href="" class="tree-depth01" style="display:inline-block">tsUser</a>
                                             <ul class="directory-tree__folder">
                                                 <li>
-                                                    <a href="">guide</a>
+                                                    <a href="" class="tree-depth02">guide</a>
                                                     <ul class="directory-tree__file">
                                                         <li>
                                                             <a href="../guide/guide.html" target="_blank">guide.html</a>
@@ -225,11 +225,14 @@
                                                 </li>
                                             </ul>
                                             <ul class="directory-tree__folder">
-                                                <li>resource
+                                                <li>
+                                                    <a href="" class="tree-depth02">resource</a>
                                                     <ul class="directory-tree__folder">
-                                                        <li>css
+                                                        <li>
+                                                            <a href="" class="tree-depth03">css</a>
                                                             <ul class="directory-tree__folder">
-                                                                <li>lib
+                                                                <li>
+                                                                    <a href="" class="tree-depth04">lib</a>
                                                                     <ul class="directory-tree__file">
                                                                         <li>preism.css</li>
                                                                     </ul>
@@ -343,7 +346,8 @@
                             <h3 class="el-tab__tit">LAYOUT</h3>
                             <div class="mt-20">
                                 <div class="el-box-tip">
-                                    tip
+                                    왼쪽 lnb 메뉴는 <strong>lnb</strong> 클래스로 감싸고 상단 <strong>lnb__tit</strong> 으로 타이틀 넣고 <strong>lnb-list</strong> 하부에 <strong>lnb-item</strong> 으로 구성한다.<br/> <strong>is-active</strong> 클래스로 현재 위치를 나타낸다. 
+                                    <strong>lnb-depth--02</strong> 요소로 
                                 </div>
                                 <div class="el-txt">
                                     txt

@@ -3,7 +3,7 @@
 $(function () {
     $('html').fnInit();
     buttonFn();
-    folderTreeFn();
+    folderTreeFn('.directory-tree-wrap');
 });
 
 $.fn.tabFn = function () {
@@ -60,11 +60,17 @@ function buttonFn(){
     })
 };
 
-function folderTreeFn(){
+function folderTreeFn(obj){
+    const depth01 = $('>ul>li>a', obj),
+    siblingFolder = depth01.siblings('ul');
+
     const treeFolderLink = $('.directory-tree__folder > li > a');
     const treeFileLink = $('.directory-tree__file > li > a');
 
     treeFolderLink.attr('href', 'javascript:void(0)');
+    $('a', this).click(function(){
+        siblingFolder.slideToggle();
+    })
 }
 
 $.fn.fnInit = function () {
