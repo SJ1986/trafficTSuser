@@ -424,7 +424,8 @@
   font-size: 18px;
 }
 .fullpage-block--menu .fullpage-box--admit .banner-link__tit q em {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 700;
 }
 .fullpage-block--menu .fullpage-box--useGuide {
   grid-row: 2/3;
@@ -446,7 +447,8 @@
   font-size: 18px;
 }
 .fullpage-block--menu .fullpage-box--useGuide .banner-link__tit q em {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 700;
 }
 .fullpage-block--menu .banner-link {
   display: block;
