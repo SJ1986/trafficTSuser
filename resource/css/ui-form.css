@@ -191,6 +191,14 @@ textarea {
 }
 .sch-form__detail {
   display: none;
+  padding: 15px 20px;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+.sch-form__detail.is-open {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .ui-form-row {

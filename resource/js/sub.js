@@ -169,6 +169,9 @@ $('body').on('click', '.file__value--remove', function() {
 
 /* add : 2022.11.30 search detail event */
 $('.btn--schDetail').click(function(){
-    $(this).addClass('is-open');
+    const schArea = $(this).parents('.sch-area');
+    const schDetail = schArea.next();
+
+    schDetail.slideToggle(200).toggleClass('is-open');
 })
 /* //add : 2022.11.30 search detail event */

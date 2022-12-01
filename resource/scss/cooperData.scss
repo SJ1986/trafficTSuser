@@ -6,6 +6,21 @@
     &-wrap{
         margin-top:20px;
     }
+    &--us_ag{
+        &_01_list{
+            td{
+                text-align:center;
+                &:nth-child(3){
+                    text-align:left;
+                }
+            }
+        }
+        &_05_list{
+            td{
+                text-align:center;
+            }
+        }
+    }
 }
 .layout{
     &-content{
