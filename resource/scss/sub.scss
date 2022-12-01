@@ -27,17 +27,28 @@
         }
         &:first-child{
             border-top:none;
-            a{
+            > a{
                 border-top-left-radius: 10px;
                 border-top-right-radius: 10px;
                 border-top:1px solid #e0e4e6;
             }
         }
         &:last-child{
-            a{
+            > a{
                 border-bottom-left-radius: 10px;
                 border-bottom-right-radius: 10px;
                 border-bottom:1px solid #e0e4e6;
+            }
+            &.is-open{
+                > a{
+                    border-radius:0;
+                    border-bottom:none;
+                }
+                .lnb-depth--02{
+                    border-bottom-left-radius: 10px;
+                    border-bottom-right-radius: 10px;
+                    border-bottom:1px solid #e0e4e6;
+                }
             }
         }
         &.is-active{
@@ -45,7 +56,7 @@
                 background:linear-gradient(94deg, rgba(2,154,251,1) 0%, rgba(0,89,198,1) 100%);
                 font-weight:500;
                 color:#fff;
-                &::before{
+                span{
                     @include pos(absolute, $t:50%, $r:15px);
                     width:8px;
                     height:11px;
@@ -54,9 +65,16 @@
                     content:"";
                 }
             }
-            .lnb-depth--02{
-                display:block;
-            }
+            &.hasChild{
+                > a{
+                    &::before, &::after{
+                        background-color:#fff;
+                    }
+                }
+                .lnb-depth--02{
+                    display:block;
+                }
+            }        
         }
         &.hasChild{
             > a{
@@ -71,14 +89,15 @@
                     transition:all .2s ease-in-out;
                     content:""
                 }
-                &::before{
-                }
                 &::after{
                     transform:translateY(-50%) rotate(90deg);
                     transition:all .2s ease-in-out;
                 }
+                span{
+                    display:none;
+                }
             }
-            &.active{
+            &.is-open{
                 > a{
                     &::after{
                         transform:translateY(-50%) rotate(0);

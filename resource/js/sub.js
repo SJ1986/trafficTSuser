@@ -120,7 +120,12 @@ window.datepickerFn = datepickerFn;
 
 /* add : 2022.11.30 lnb event */
 function lnbFn(){
+    const aDepth1 = $('.lnb-item.is-active > a');
+    const newEl = document.createElement('span');
+    
 	$('.lnb-depth--02').prev('a').attr('href', 'javascript:void(0)').parents('.lnb-item').addClass('hasChild');
+
+    aDepth1.prepend(newEl);
 }
 $.fn.setSnbMenu = function () {
 	$('> a', this).click(function () {
@@ -128,9 +133,9 @@ $.fn.setSnbMenu = function () {
 		const sibling = lnbItem.siblings();
 		const lnbItemDepth2 = $('>ul', lnbItem);
 
-		sibling.removeClass('active');
+		sibling.removeClass('is-open');
 		$('ul', sibling).slideUp("fast");
-		lnbItem.toggleClass('active');
+		lnbItem.toggleClass('is-open');
 
 		if (lnbItemDepth2.length > 0) {
 			lnbItemDepth2.slideToggle("fast", function () {
@@ -161,3 +166,9 @@ $('body').on('click', '.file__value--remove', function() {
     $(this).parents('.file__value').remove();
 });
 /* //add : 2022.11.30 fileUpload event */
+
+/* add : 2022.11.30 search detail event */
+$('.btn--schDetail').click(function(){
+    $(this).addClass('is-open');
+})
+/* //add : 2022.11.30 search detail event */

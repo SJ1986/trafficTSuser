@@ -1,0 +1,19 @@
+@charset 'UTF-8';
+@import 'mixin';
+@import 'svg';
+
+.table{
+    &-wrap{
+        margin-top:20px;
+    }
+}
+.layout{
+    &-content{
+        &__subtit{
+            + .sch-area{
+                margin-top:20px;
+            }
+        }
+    }
+
+}

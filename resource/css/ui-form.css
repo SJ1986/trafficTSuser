@@ -189,6 +189,9 @@ textarea {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.sch-form__detail {
+  display: none;
+}
 
 .ui-form-row {
   display: -webkit-box;

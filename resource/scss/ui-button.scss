@@ -29,6 +29,19 @@ footer{
         margin-left:3px;
         border-radius:4px;
         background:#0053b3 url('../image/common/icon/icon-sch.png') no-repeat center center/auto;
+        &:hover{
+            color:#fff;
+            background-color:#2e7bd4;
+        }
+    }
+    &--schDetail{
+        padding:0 27px;
+        color:#fff;
+        background-color:#003471;
+        &:hover{
+            color:#fff;
+            background-color:#2e7bd4;
+        }
     }
     &-wrap{
         button{

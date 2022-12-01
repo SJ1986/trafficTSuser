@@ -244,10 +244,16 @@
     &-depth{
         &--02{
             li{
-              &:hover{
+              &:hover, &.is-active{
                 background:url('../image/common/icon/icon-clamp__right--on.png') no-repeat 95% center/auto;
                 &::before{
                   background-color:#000;
+                }
+              }
+              &.is-active{
+                > a{
+                  font-weight:500;
+                  color:#000;
                 }
               }
             a{

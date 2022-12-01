@@ -93,6 +93,9 @@ textarea{
             display:flex;
             justify-content: center;
         }
+        &__detail{
+            display:none;
+        }
     }
 }
 .ui{
