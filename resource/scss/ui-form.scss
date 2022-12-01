@@ -25,9 +25,20 @@ input, select{
         }
     }
 }
+input{
+    &[class*='js-datepicker']{
+        background:#fff url('../image/common/icon/icon-calendar.png') no-repeat 90% center/17px 17px;
+    }
+    &:disabled{
+        background-color:#ddd;
+    }
+}
 select{
     letter-spacing: -0.05em;
     background:#fff url('../image/common/icon/icon-clamp__down.png') no-repeat 95% center/auto;
+    &:disabled{
+        background-color:#ddd;
+    }
 }
 textarea{
     padding:10px;
@@ -43,12 +54,28 @@ textarea{
         &--box{
             padding:20px 0;
             input{
+                max-width:285px;
                 &::placeholder{
                     color:#747478;
                 }
                 &:focus{
                     &::placeholder{
                         color:#fff;
+                    }
+                }
+            }
+            label{
+                margin-left:3px;
+                &:first-child{
+                    select{
+                        padding-right:70px;
+                        background-position:95% center;
+                    }
+                }
+                &:nth-child(2){
+                    select{
+                        padding-right:50px;
+                        background-position:90% center;
                     }
                 }
             }
@@ -74,6 +101,9 @@ textarea{
             display:flex;
         }
         &-width{
+            &--l{
+                width:450px
+            }
             &--m{
                 width:346px
             }
@@ -95,5 +125,111 @@ textarea{
     }
     &-scroll{
         overflow:auto;
+    }
+}
+
+.file{
+	position: relative;
+	font-size: 17px;
+	font-weight: 600;
+    &__upload{
+        &--name{
+            display:inline-block;
+            width:580px;
+            height:40px;
+            padding:0 10px;
+            margin-right:5px;
+            vertical-align: middle;
+            border:1px solid #ddd;
+            color:#999;
+        }
+    }
+	&__input{
+        display:flex;
+        width:700px;
+		background-color: rgba(255, 255, 255, .1);
+		border-radius: 3px;
+		color: rgba(255, 255, 255, .3);
+        &--file{
+            overflow:hidden;
+            position:absolute;
+            width:0;
+            height:0;
+            padding:0;
+            border:0;
+        }
+		&--label{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 0;
+			cursor: pointer;
+            width:120px;
+            height:40px;
+            padding-left:22px;
+            border-radius: 3px;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.18);
+            font-size:15px;
+            color: #fff;
+            background:#003471 url('../image/common/icon/icon-uploadFile.png') no-repeat 15% center/21px 18px;
+            cursor: pointer;
+        }
+    }
+    &__value{
+		@extend .file__input;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+        margin-top:10px;
+		color: rgba(255, 255, 255, .6);
+        + .file__value{
+            margin-top:5px;
+        }
+		&:hover{
+			&:after{
+				color: rgba(255, 255, 255, 1);
+            }
+        }
+        &--text{
+            display:flex;
+            align-items:center;
+            width:auto;
+            border:1px solid #ddd;
+            height:40px;
+            padding:0 20px;
+            font-size:15px;
+            border-radius:3px;
+            color:#000;
+            cursor:pointer;
+            &:hover{
+                .file__value--remove{
+                    &::before, &::after{
+                        background-color:#20aeea;
+                    }
+                }
+            }
+        }
+        &--remove{
+            position:relative;
+            display: block;
+            width: 20px;
+            height: 20px;
+            margin-left:30px;
+            &::before, &::after{
+                position:absolute;
+                top:50%;
+                left:50%;
+                background-color:#a0a8ab;
+                width:2px;
+                height:10px;
+                content:"";
+            }
+            &::before{
+                transform:translate(-50%, -50%) rotate(135deg);    
+            }
+            &::after{
+                transform:translate(-50%, -50%) rotate(225deg);    
+            }
+        }
     }
 }

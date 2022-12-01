@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../resource/css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="../resource/css/lib/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="../resource/css/ux-common.css">
+    <link rel="stylesheet" href="../resource/css/sub.css">
+    <link rel="stylesheet" href="../resource/css/commonData.css">
+    <title>TS 한국교통안전공단</title>
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <nav class="nav">
+                <div class="nav__inner">
+                    <a href="">001 테스트기관</a>
+                    <a href="">로그아웃</a>
+                    <a href="">개인정보수정</a>
+                    <a href="">My Data</a>
+                    <a href="">Open API</a>
+                </div>
+            </nav>
+            <div class="header-menuWrap">
+                <div class="header__inner">
+                    <h1 class="header__logo">
+                        <a href="">
+                            <span class="hidden">TS 한국교통안전공단 자동차안전연구원</span>
+                        </a>
+                    </h1>
+                    <div class="gnb">
+                        <a href="">
+                            공공데이터
+                        </a><div class="gnb-depth--02">
+                            <div class="gnb-depth--02__inner">
+                                <h2 class="gnb-depth--02__tit">공공데이터</h2>
+                                <div class="gnb-depth--03">
+                                    <div class="gnb-depth--03__item">
+                                        <h3 class="gnb-depth--03__tit">일반 시나리오<br/>데이터셋</h3>
+                                        <!-- <ul class="lists lists-cir--s">
+                                            <li>
+                                                <a href="">text</a>
+                                            </li>
+                                        </ul> -->
+                                    </div>
+                                    <div class="gnb-depth--03__item">
+                                        <h3 class="gnb-depth--03__tit">엣지케이스 시나리오<br/>데이터셋</h3>
+                                        <!-- <ul class="lists lists-cir--s">
+                                            <li>
+                                                <a href="">text</a>
+                                            </li>
+                                        </ul> -->
+                                    </div>
+                                    <div class="gnb-depth--03__item">
+                                        <h3 class="gnb-depth--03__tit">V2X<br/>데이터셋</h3>
+                                        <!-- <ul class="lists lists-cir--s">
+                                            <li>
+                                                <a href="">text</a>
+                                            </li>
+                                        </ul> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="">
+                            협의체 데이터
+                        </a>
+                        <div class="gnb-depth--02">
+                            <div class="gnb-depth--02__inner">
+                                <h2 class="gnb-depth--02__tit">협의체 데이터</h2>
+                                <div class="gnb-depth--03">
+                                    <div class="gnb-depth--03__item">
+                                        <h3 class="gnb-depth--03__tit">
+                                            일반 시나리오<br/>데이터셋
+                                        </h3>
+                                        <ul class="lists lists-cir--s">
+                                            <li>
+                                                <a href="">차량거동정보</a>
+                                            </li>
+                                            <li>
+                                                <a href="">센서정보</a>
+                                            </li>
+                                            <li>
+                                                <a href="">V2X 정보</a>
+                                            </li>
+                                            <li>
+                                                <a href="">융합정보</a>
+                                            </li>
+                                            <li>
+                                                <a href="">데이터셋</a>
+                                            </li>
+                                            <li>
+                                                <a href="">자율주행 학습정보</a>
+                                            </li>
+                                            <li>
+                                                <a href="">기타자율주행정보</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="gnb-depth--03__item">
+                                        <h3 class="gnb-depth--03__tit">
+                                            엣지케이스 시나리오<br/>데이터셋
+                                        </h3>
+                                        <!-- <ul class="lists lists-cir--s">
+                                            <li>
+                                                <a href="">text</a>
+                                            </li>
+                                        </ul> -->
+                                    </div>
+                                    <div class="gnb-depth--03__item">
+                                        <h3 class="gnb-depth--03__tit">
+                                            V2X 데이터셋
+                                        </h3>
+                                        <!-- <ul class="lists lists-cir--s">
+                                            <li>
+                                                <a href="">text</a>
+                                            </li>
+                                        </ul> -->
+                                    </div>
+                                    <div class="gnb-depth--03__item">
+                                        <h3 class="gnb-depth--03__tit">
+                                            공강정보 안내<br/>및 신청
+                                        </h3>
+                                        <!-- <ul class="lists lists-cir--s">
+                                            <li>
+                                                <a href="">text</a>
+                                            </li>
+                                        </ul> -->
+                                    </div>
+                                    <div class="gnb-depth--03__item">
+                                        <h3 class="gnb-depth--03__tit">
+                                            자율주행 데이터<br/>업로드
+                                        </h3>
+                                        <!-- <ul class="lists lists-cir--s">
+                                            <li>
+                                                <a href="">text</a>
+                                            </li>
+                                        </ul> -->
+                                    </div>
+                                    <div class="gnb-depth--03__item">
+                                        <h3 class="gnb-depth--03__tit">
+                                            데이터셋                                    
+                                        </h3>
+                                        <!-- <ul class="lists lists-cir--s">
+                                            <li>
+                                                <a href="">text</a>
+                                            </li>
+                                        </ul> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="">
+                            운행정보 보고
+                        </a>
+                        <div class="gnb-depth--02">
+                            <div class="gnb-depth--02__inner">
+                                <h2 class="gnb-depth--02__tit">운행정보 보고</h2>
+                                <div class="gnb-depth--03">
+                                    <div class="gnb-depth--03__item">
+                                        <h3 class="gnb-depth--03__tit">교통사고</h3>
+                                        <!-- <ul class="lists lists-cir--s">
+                                            <li>
+                                                <a href="">text</a>
+                                            </li>
+                                        </ul> -->
+                                    </div>
+                                    <div class="gnb-depth--03__item">
+                                        <h3 class="gnb-depth--03__tit">운행정보보고서</h3>
+                                        <!-- <ul class="lists lists-cir--s">
+                                            <li>
+                                                <a href="">text</a>
+                                            </li>
+                                        </ul> -->
+                                    </div>
+                                    <div class="gnb-depth--03__item">
+                                        <h3 class="gnb-depth--03__tit">장치 및 기능변경</h3>
+                                        <!-- <ul class="lists lists-cir--s">
+                                            <li>
+                                                <a href="">text</a>
+                                            </li>
+                                        </ul> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="">
+                            자율주행 최신동향
+                        </a>
+                        <div class="gnb-depth--02">
+                            <div class="gnb-depth--02__inner">
+                                <h2 class="gnb-depth--02__tit">자율주행 최신동향</h2>
+                                <div class="gnb-depth--03">
+                                    <div class="gnb-depth--03__item">
+                                        <h3 class="gnb-depth--03__tit">자율주행최신동향</h3>
+                                        <!-- <ul class="lists lists-cir--s">
+                                            <li>
+                                                <a href="">text</a>
+                                            </li>
+                                        </ul> -->
+                                    </div>
+                                    <div class="gnb-depth--03__item">
+                                        <h3 class="gnb-depth--03__tit">공지사항</h3>
+                                        <!-- <ul class="lists lists-cir--s">
+                                            <li>
+                                                <a href="">text</a>
+                                            </li>
+                                        </ul> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="">
+                            데이터 공유센터 시설이용
+                        </a>
+                        <div class="gnb-depth--02">
+                            <div class="gnb-depth--02__inner">
+                                <h2 class="gnb-depth--02__tit">데이터 공유센터<br/>시설이용</h2>
+                                <div class="gnb-depth--03">
+                                    <div class="gnb-depth--03__item">
+                                        <h3 class="gnb-depth--03__tit">차량 플랫폼<br/>공유</h3>
+                                        <!-- <ul class="lists lists-cir--s">
+                                            <li>
+                                                <a href="">text</a>
+                                            </li>
+                                        </ul> -->
+                                    </div>
+                                    <div class="gnb-depth--03__item">
+                                        <h3 class="gnb-depth--03__tit">공유센터 이용안내</h3>
+                                        <!-- <ul class="lists lists-cir--s">
+                                            <li>
+                                                <a href="">text</a>
+                                            </li>
+                                        </ul> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="">
+                            이용안내 
+                        </a>
+                        <div class="gnb-depth--02">
+                            <div class="gnb-depth--02__inner">
+                                <h2 class="gnb-depth--02__tit">이용안내</h2>
+                                <div class="gnb-depth--03">
+                                    <div class="gnb-depth--03__item">
+                                        <h3 class="gnb-depth--03__tit">테이터공유센터소개</h3>
+                                        <!-- <ul class="lists lists-cir--s">
+                                            <li>
+                                                <a href="">text</a>
+                                            </li>
+                                        </ul> -->
+                                    </div>
+                                    <div class="gnb-depth--03__item">
+                                        <h3 class="gnb-depth--03__tit">공공데이터</h3>
+                                        <!-- <ul class="lists lists-cir--s">
+                                            <li>
+                                                <a href="">text</a>
+                                            </li>
+                                        </ul> -->
+                                    </div>
+                                    <div class="gnb-depth--03__item">
+                                        <h3 class="gnb-depth--03__tit">데이터공유협의체</h3>
+                                        <!-- <ul class="lists lists-cir--s">
+                                            <li>
+                                                <a href="">text</a>
+                                            </li>
+                                        </ul> -->
+                                    </div>
+                                    <div class="gnb-depth--03__item">
+                                        <h3 class="gnb-depth--03__tit">법령 및 지침</h3>
+                                        <!-- <ul class="lists lists-cir--s">
+                                            <li>
+                                                <a href="">text</a>
+                                            </li>
+                                        </ul> -->
+                                    </div>
+                                    <div class="gnb-depth--03__item">
+                                        <h3 class="gnb-depth--03__tit">자율주행차 임시운행허가</h3>
+                                        <!-- <ul class="lists lists-cir--s">
+                                            <li>
+                                                <a href="">text</a>
+                                            </li>
+                                        </ul> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="side-menu">
+                        <div class="side-menu__inner">
+                            <button type="button" class="side-menu__btn" title="사이드 메뉴 열림">
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="container">
+            <div class="container__inner">
+                <div class="content">
+                    <div class="content__inner">
+
+                        <div class="layout-container layout-full">
+                            <div class="layout-container__inner layout-container--row">
+                                <div class="lnb">
+                                    <h3 class="lnb__tit">공공데이터</h3>
+                                    <div class="lnb-list">
+                                        <div class="lnb-item is-active">
+                                            <a href="">일반시나리오 데이터셋</a>
+                                        </div>
+                                        <div class="lnb-item">
+                                            <a href="">엣지케이스 시나리오<br/>데이터셋</a>
+                                        </div>
+                                        <div class="lnb-item">
+                                            <a href="">V2X 데이터셋</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="layout-content">
+                                    <div class="layout-content__inner">
+                                        <div class="layout-content__top">
+                                            <h4 class="layout-content__tit">일반시나리오 데이터셋</h4>
+                                            <ul class="location ml-auto">
+                                                <li>
+                                                    <img src="../resource/image/sub/icon/icon-home.png" alt="홈">
+                                                </li>
+                                                <li>공공데이터</li>
+                                                <li>일반시나리오 데이터셋</li>
+                                            </ul>
+                                        </div>
+                                        <div class="sch-area sch-area--box sch-area--gray">
+                                            <div class="sch-form sch-form--row">
+                                                <form action="">
+                                                    <label for="">
+                                                        <select name="" id="" title="일반시나리오(시간) 선택">
+                                                            <option>일반시나리오(시간)</option>
+                                                            <option>주간(DA)</option>
+                                                            <option>일출일몰(SS)</option>
+                                                            <option>야간(NI)</option>
+                                                        </select>
+                                                    </label>
+                                                    <label for="">
+                                                        <select name="" id="" title="특수시나리오(날씨) 선택" disabled>
+                                                            <option>특수시나리오(날씨)</option>
+                                                            <option>맑음(00S)</option>
+                                                            <option>흐림(00C)</option>
+                                                            <option>비(00R)</option>
+                                                            <option>안개(00F)</option>
+                                                            <option>눈(00E)</option>
+                                                            <option>맑음흐림(0SC)</option>
+                                                            <option>비안개눈(RFE)</option>
+                                                        </select>
+                                                    </label>
+                                                    <label for="">
+                                                        <select name="" id="" title="엣지케이스(도로/상황) 선택" disabled>
+                                                            <option>엣지케이스(도로/상황)</option>
+                                                            <option>고속도로(HI)</option>
+                                                            <option>일반도로(NO)</option>
+                                                            <option>지방도로(PR)</option>
+                                                            <option>이면도로(BA)</option>
+                                                            <option>터널(TE)</option>
+                                                            <option>낙하물(FA)</option>
+                                                        </select>
+                                                    </label>
+                                                    <label for="">
+                                                        <select name="" id="" title="전체/제목/내용 선택">
+                                                            <option>전체</option>
+                                                            <option>제목</option>
+                                                            <option>내용</option>
+                                                        </select>
+                                                    </label>
+                                                    <label for="">
+                                                        <input type="text" name="" id="" title="검색어 입력" placeholder="검색어를 입력해주세요.">
+                                                    </label>
+                                                    <button type="butotn" class="btn btn--sch" title="검색"></button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <div class="table-wrap">
+                                            <div class="table-cap">
+                                                <p class="table-cap__count">
+                                                    총 <span>999</span> 건
+                                                </p>
+                                                <p class="table-cap__page">
+                                                    페이지 <span>1</span>/20
+                                                </p>
+                                            </div>
+                                            <table class="table-basic table-basic--col table--us_od_01_list">
+                                                <caption>공공데이터 &gt; 일반시나리오 데이터셋 테이블</caption>
+                                                <colgroup>
+                                                    <col style="width:8%">
+                                                    <col style="width:15%">
+                                                    <col style="width:auto">
+                                                    <col style="width:15%">
+                                                    <col style="width:14%">
+                                                    <col style="width:14%">
+                                                    <col style="width:12%">
+                                                </colgroup>
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">번호</th>
+                                                        <th scope="col">데이터유형</th>
+                                                        <th scope="col">제목</th>
+                                                        <th scope="col">파일명</th>
+                                                        <th scope="col">주행모드</th>
+                                                        <th scope="col">등록일</th>
+                                                        <th scope="col">다운로드 수</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>9</td>
+                                                        <td>기타자율주행정보</td>
+                                                        <td>자율주행 데이터 수집 플랫폼 데이터</td>
+                                                        <td>
+                                                            <button type="button" class="btn btn--download">파일명.확장자</button>
+                                                        </td>
+                                                        <td>자율주행모드</td>
+                                                        <td>2022-01-01</td>
+                                                        <td>11</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>8</td>
+                                                        <td>기타자율주행정보</td>
+                                                        <td>자율주행 데이터 수집 플랫폼 데이터</td>
+                                                        <td>
+                                                            <button type="button" class="btn btn--download">파일명.확장자</button>
+                                                        </td>
+                                                        <td>자율주행모드</td>
+                                                        <td>2022-01-01</td>
+                                                        <td>11</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>7</td>
+                                                        <td>기타자율주행정보</td>
+                                                        <td>자율주행 데이터 수집 플랫폼 데이터</td>
+                                                        <td>
+                                                            <button type="button" class="btn btn--download">파일명.확장자</button>
+                                                        </td>
+                                                        <td>자율주행모드</td>
+                                                        <td>2022-01-01</td>
+                                                        <td>11</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>6</td>
+                                                        <td>기타자율주행정보</td>
+                                                        <td>자율주행 데이터 수집 플랫폼 데이터</td>
+                                                        <td>
+                                                            <button type="button" class="btn btn--download">파일명.확장자</button>
+                                                        </td>
+                                                        <td>자율주행모드</td>
+                                                        <td>2022-01-01</td>
+                                                        <td>11</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>5</td>
+                                                        <td>기타자율주행정보</td>
+                                                        <td>자율주행 데이터 수집 플랫폼 데이터</td>
+                                                        <td>
+                                                            <button type="button" class="btn btn--download">파일명.확장자</button>
+                                                        </td>
+                                                        <td>자율주행모드</td>
+                                                        <td>2022-01-01</td>
+                                                        <td>11</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>4</td>
+                                                        <td>기타자율주행정보</td>
+                                                        <td>자율주행 데이터 수집 플랫폼 데이터</td>
+                                                        <td>
+                                                            <button type="button" class="btn btn--download">파일명.확장자</button>
+                                                        </td>
+                                                        <td>자율주행모드</td>
+                                                        <td>2022-01-01</td>
+                                                        <td>11</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>3</td>
+                                                        <td>기타자율주행정보</td>
+                                                        <td>자율주행 데이터 수집 플랫폼 데이터</td>
+                                                        <td>
+                                                            <button type="button" class="btn btn--download">파일명.확장자</button>
+                                                        </td>
+                                                        <td>자율주행모드</td>
+                                                        <td>2022-01-01</td>
+                                                        <td>11</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>기타자율주행정보</td>
+                                                        <td>자율주행 데이터 수집 플랫폼 데이터</td>
+                                                        <td>
+                                                            <button type="button" class="btn btn--download">파일명.확장자</button>
+                                                        </td>
+                                                        <td>자율주행모드</td>
+                                                        <td>2022-01-01</td>
+                                                        <td>11</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>기타자율주행정보</td>
+                                                        <td>자율주행 데이터 수집 플랫폼 데이터</td>
+                                                        <td>
+                                                            <button type="button" class="btn btn--download">파일명.확장자</button>
+                                                        </td>
+                                                        <td>자율주행모드</td>
+                                                        <td>2022-01-01</td>
+                                                        <td>11</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="paging">
+                                            <a href="" class="page-link page-link--first">
+                                                <img src="../resource/image/common/icon/icon-page-link--first.png" alt="">
+                                            </a>
+                                            <a href="" class="page-link page-link--prev">
+                                                <img src="../resource/image/common/icon/icon-page-link--prev.png" alt="">
+                                            </a>
+                                            <a href="" class="active" title="선택됨">1</a>
+                                            <a href="">2</a>
+                                            <a href="">3</a>
+                                            <a href="">4</a>
+                                            <a href="">5</a>
+                                            <a href="">6</a>
+                                            <a href="">7</a>
+                                            <a href="">8</a>
+                                            <a href="">9</a>
+                                            <a href="">10</a>
+                                            <a href="" class="page-link page-link--next">
+                                                <img src="../resource/image/common/icon/icon-page-link--next.png" alt="">
+                                            </a>
+                                            <a href="" class="page-link page-link--last">
+                                                <img src="../resource/image/common/icon/icon-page-link--last.png" alt="">
+                                            </a>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer__inner">
+                <span class="footer-logo">
+                    <img src="../resource/image/main/img-logo-head-color.png" alt="">
+                </span>
+                <div class="d-flex align-end">
+                    <address>
+                        <span>주소</span> 18247) 경기도 화성시 송산면 삼존로 200 자동차안전연구원｜<span>문의전화</span> 1577-0990
+                    </address>
+                    <button type="button" class="btn btn--report">품질오류 신고 및 확인</button>
+                    <a href="" class="footer-link">
+                        <img src="../resource/image/common/img-main-visual--logo01.png" alt="">
+                    </a>
+                    <a href="" class="footer-link" target="_blank">
+                        <img src="../resource/image/common/img-main-visual--logo02.png" alt="">
+                    </a>
+                </div>
+                <p class="copyRight">©2022. <span>TS Corp.</span>  All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    
+    <script type="text/javascript" src="../resource/js/lib/jquery/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="../resource/js/lib/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../resource/js/lib/tweenmax.min.js"></script>
+    <script type="text/javascript" src="../resource/js/lib/moment.min.js"></script>
+    <script type="text/javascript" src="../resource/js/lib/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="../resource/js/lib/bootstrap-datetimepicker.min.js"></script>
+    <script type="text/javascript" src="../resource/js/common.js"></script>
+    <script type="text/javascript" src="../resource/js/sub.js"></script>
+</body>
+</html>

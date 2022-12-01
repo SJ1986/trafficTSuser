@@ -1,3 +1,19 @@
 @charset 'UTF-8';
 @import 'mixin';
 @import 'svg';
+
+.table{
+    &-wrap{
+        margin-top:20px;
+    }
+    &-basic{
+        &.table--us_od_01_list{
+            td{
+                text-align:center;
+                &:nth-child(3){
+                    text-align:left;
+                }
+            }
+        }
+    }
+}

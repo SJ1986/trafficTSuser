@@ -89,6 +89,7 @@
 }
 .table-basic td {
   border-top: 1px solid #eceff0;
+  line-height: 1.2;
 }
 .table-basic td a {
   font-weight: 500;

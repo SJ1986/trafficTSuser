@@ -235,6 +235,19 @@
       .index-status--moding {
         background-color: #ff4594;
       }
+      .index-share {
+        display: inline-block;
+        vertical-align: top;
+        padding: 3px 8px;
+        margin: -3px 0;
+        background: #999;
+        color: #fff;
+        border-radius: 5px;
+      }
+
+      .index-share--comp {
+        background-color: #ff6c6c;
+      }
 
       .index-log {
         list-style: none;
@@ -301,7 +314,6 @@
             id: '',
             depth2: '',
             depth3: '',
-            depth4: '',
             depth5: '',
             depth6: '',
             path: '',
@@ -323,8 +335,9 @@
             depth1: '인덱스',
             depth2: '',
             depth3: '',
-            path: 'index.html',
+            path: 'US_MA_01.html',
             status: 'end',
+            share: 'comp',
             create: '2022.11.22',
             log: [{ date: '2022.11.28', text: '작업 완료' }],
           },
@@ -335,53 +348,58 @@
         data: [
           {
             id:'US_DA_01_list',
-            depth1: '마이페이지',
-            depth2: '내가 올린 자료',
+            depth1: '내가 올린 자료',
+            depth2: 'list',
             depth3: '',
-            path: './sub/mydataUploadList.html',
+            path: './sub/US_DA_01_list.html',
             status: 'end',
+            share: 'comp',
             create: '2022.11.28',
             log: [{ date: '2022.11.29', text: '작업 완료' }],
           },
           {
             id:'US_DA_02_list',
-            depth1: '마이페이지',
-            depth2: '내가 받은 자료',
+            depth1: '내가 받은 자료',
+            depth2: 'list',
             depth3: '',
-            path: './sub/mydataDownloadList.html',
+            path: './sub/US_DA_02_list.html',
             status: 'end',
+            share: 'comp',
             create: '2022.11.28',
             log: [{ date: '2022.11.29', text: '작업 완료' }],
           },
           {
             id:'US_DA_03_write',
             depth1: '차량등록',
-            depth2: '임시운행차량 등록, 보험일자 가입등록',
+            depth2: 'write',
             depth3: '',
-            path: './sub/mydataRegistCar.html',
+            path: './sub/US_DA_03_write.html',
             status: 'end',
+            share: 'comp',
             create: '2022.11.28',
             log: [{ date: '2022.11.29', text: '작업 완료' }],
           },
           {
             id:'US_DA_04_edit',
             depth1: '차량관리',
-            depth2: '담당자 수정, 보험가입일자 수정',
+            depth2: 'edit',
             depth3: '',
-            path: './sub/mydataManageCar.html',
-            status: 'stay',
+            path: './sub/US_DA_04_edit.html',
+            status: 'end',
+            share: 'comp',
             create: '',
             log: [
               //{ date: '2022.11.22', text: '' }
             ],
           },
           {
-            id:'',
+            id:'US_DA_05',
             depth1: '권한위임',
             depth2: '',
             depth3: '',
-            path: './sub/mydataDelegateRight.html',
-            status: 'stay',
+            path: './sub/US_DA_05.html',
+            status: 'end',
+            share: 'comp',
             create: '',
             log: [
               //{ date: '2022.11.22', text: '' }
@@ -393,12 +411,13 @@
           depth1: 'openApi',
           data: [
             {
-              id:'',
+              id:'US_OA_01_view',
               depth1: 'openApi',
               depth2: '',
               depth3: '',
-              path: './sub/openApi.html',
+              path: './sub/US_OA_01_view.html',
               status: 'end',
+              share: 'comp',
               create: '2022.11.28',
               log: [{ date: '2022.11.29', text: '작업 완료' }],
             },
@@ -408,34 +427,70 @@
           depth1: '공공데이터',
           data: [
             {
-              id:'',
+              id:'US_OD_01_list',
               depth1: '일반시나리오테이터셋',
-              depth2: '',
+              depth2: 'list',
               depth3: '',
-              path: './sub/commonDataScenario.html',
-              status: 'stay',
-              create: '',
-              log: [{ date: '2022.11.22', text: '' }],
+              path: './sub/US_OD_01_list.html',
+              status: 'end',
+              share: 'comp',
+              create: '2022.11.30',
+              log: [{ date: '2022.12.01', text: '작업완료' }],
             },
             {
-              id:'',
-              depth1: '엣지케이스 시나리오데이터셋',
-              depth2: '',
+              id:'US_OD_01_write',
+              depth1: '일반시나리오테이터셋',
+              depth2: 'write',
               depth3: '',
-              path: './sub/commonDataEdgeCase.html',
-              status: 'stay',
+              path: './sub/US_OD_01_write.html',
+              status: 'end',
+              share: 'comp',
               create: '',
-              log: [{ date: '2022.11.22', text: '' }],
+              log: [{ date: '2022.12.01', text: '작업완료' }],
             },
             {
-              id:'',
+              id:'US_OD_02_list',
+              depth1: '엣지케이스 시나리오테이터셋',
+              depth2: 'list',
+              depth3: '',
+              path: './sub/US_OD_02_list.html',
+              status: 'end',
+              share: 'comp',
+              create: '2022.11.30',
+              log: [{ date: '2022.12.01', text: '작업완료' }],
+            },
+            {
+              id:'US_OD_02_write',
+              depth1: '엣지케이스 시나리오테이터셋',
+              depth2: 'write',
+              depth3: '',
+              path: './sub/US_OD_02_write.html',
+              status: 'end',
+              share: 'comp',
+              create: '',
+              log: [{ date: '2022.12.01', text: '작업완료' }],
+            },
+            {
+              id:'US_OD_03_list',
               depth1: 'V2X 데이터셋',
               depth2: '',
               depth3: '',
-              path: './sub/commonDataV2x.html',
-              status: 'stay',
+              path: './sub/US_OD_03_list.html',
+              status: 'end',
+              share: 'comp',
               create: '',
-              log: [{ date: '2022.11.22', text: '' }],
+              log: [{ date: '2022.12.01', text: '작업완료' }],
+            },
+            {
+              id:'US_OD_03_write',
+              depth1: 'V2X 데이터셋',
+              depth2: '',
+              depth3: '',
+              path: './sub/US_OD_03_write.html',
+              status: 'end',
+              share: 'comp',
+              create: '',
+              log: [{ date: '2022.12.01', text: '작업완료' }],
             },
           ],
         },
@@ -449,8 +504,9 @@
               depth3: '',
               path: './sub/workDataScenario.html',
               status: 'ing',
+              share: '',
               create: '',
-              log: [{ date: '2022.11.22', text: '' }],
+              log: [{ date: '2022.12.01', text: '작업완료' }],
             },
             {
               id:'',
@@ -459,8 +515,9 @@
               depth3: '',
               path: './sub/workDataEdgeCase.html',
               status: 'ing',
+              share: '',
               create: '',
-              log: [{ date: '2022.11.22', text: '' }],
+              log: [{ date: '2022.12.01', text: '작업완료' }],
             },
             {
               id:'',
@@ -469,8 +526,9 @@
               depth3: '',
               path: './sub/workDataV2x.html',
               status: 'ing',
+              share: '',
               create: '',
-              log: [{ date: '2022.11.22', text: '' }],
+              log: [{ date: '2022.12.01', text: '작업완료' }],
             },
             {
               id:'',
@@ -479,8 +537,9 @@
               depth3: '',
               path: './sub/workDataGuide.html',
               status: 'ing',
+              share: '',
               create: '',
-              log: [{ date: '2022.11.22', text: '' }],
+              log: [{ date: '2022.12.01', text: '작업완료' }],
             },
             {
               id:'',
@@ -489,8 +548,9 @@
               depth3: '',
               path: './sub/workDataUpload.html',
               status: 'ing',
+              share: '',
               create: '',
-              log: [{ date: '2022.11.22', text: '' }],
+              log: [{ date: '2022.12.01', text: '작업완료' }],
             },
             {
               id:'',
@@ -499,8 +559,9 @@
               depth3: '',
               path: './sub/workDataSet.html',
               status: 'ing',
+              share: '',
               create: '',
-              log: [{ date: '2022.11.22', text: '' }],
+              log: [{ date: '2022.12.01', text: '작업완료' }],
             },
           ],
         },
@@ -514,8 +575,9 @@
               depth3: '',
               path: './sub/trafficAccident.html',
               status: 'ing',
+              share: '',
               create: '',
-              log: [{ date: '2022.11.22', text: '' }],
+              log: [{ date: '2022.12.01', text: '작업완료' }],
             },
             {
               id:'',
@@ -524,8 +586,9 @@
               depth3: '',
               path: './sub/driveInfoReport.html',
               status: 'ing',
+              share: '',
               create: '',
-              log: [{ date: '2022.11.22', text: '' }],
+              log: [{ date: '2022.12.01', text: '작업완료' }],
             },
             {
               id:'',
@@ -534,8 +597,9 @@
               depth3: '',
               path: './sub/equipChange.html',
               status: 'ing',
+              share: '',
               create: '',
-              log: [{ date: '2022.11.22', text: '' }],
+              log: [{ date: '2022.12.01', text: '작업완료' }],
             },
           ]
         },
@@ -549,8 +613,9 @@
               depth3: '',
               path: './sub/autoDriveTrend.html',
               status: 'ing',
+              share: '',
               create: '',
-              log: [{ date: '2022.11.22', text: '' }],
+              log: [{ date: '2022.12.01', text: '작업완료' }],
             },
             {
               id:'',
@@ -559,8 +624,9 @@
               depth3: '',
               path: './sub/autoDriveNotice.html',
               status: 'ing',
+              share: '',
               create: '',
-              log: [{ date: '2022.11.22', text: '' }],
+              log: [{ date: '2022.12.01', text: '작업완료' }],
             },
           ]
         },
@@ -574,8 +640,9 @@
               depth3: '',
               path: './sub/shareCenterFlatform.html',
               status: 'ing',
+              share: '',
               create: '',
-              log: [{ date: '2022.11.22', text: '' }],
+              log: [{ date: '2022.12.01', text: '작업완료' }],
             },
             {
               id:'',
@@ -584,8 +651,9 @@
               depth3: '',
               path: './sub/shareCenterGuide.html',
               status: 'ing',
+              share: '',
               create: '',
-              log: [{ date: '2022.11.22', text: '' }],
+              log: [{ date: '2022.12.01', text: '작업완료' }],
             },
           ]
         },
@@ -599,8 +667,9 @@
               depth3: '',
               path: './sub/userGuideIntro.html',
               status: 'ing',
+              share: '',
               create: '',
-              log: [{ date: '2022.11.22', text: '' }],
+              log: [{ date: '2022.12.01', text: '작업완료' }],
             },
             {
               id:'',
@@ -609,8 +678,9 @@
               depth3: '',
               path: './sub/userGuideData.html',
               status: 'ing',
+              share: '',
               create: '',
-              log: [{ date: '2022.11.22', text: '' }],
+              log: [{ date: '2022.12.01', text: '작업완료' }],
             },
             {
               id:'',
@@ -619,8 +689,9 @@
               depth3: '',
               path: './sub/userGuideCompany.html',
               status: 'ing',
+              share: '',
               create: '',
-              log: [{ date: '2022.11.22', text: '' }],
+              log: [{ date: '2022.12.01', text: '작업완료' }],
             },
             {
               id:'',
@@ -629,8 +700,9 @@
               depth3: '',
               path: './sub/userGuideTerms.html',
               status: 'ing',
+              share: '',
               create: '',
-              log: [{ date: '2022.11.22', text: '' }],
+              log: [{ date: '2022.12.01', text: '작업완료' }],
             },
             {
               id:'',
@@ -639,8 +711,9 @@
               depth3: '',
               path: './sub/userGuideAutoDrivePermit.html',
               status: 'ing',
+              share: '',
               create: '',
-              log: [{ date: '2022.11.22', text: '' }],
+              log: [{ date: '2022.12.01', text: '작업완료' }],
             },
           ]
         },
@@ -700,11 +773,11 @@
             return isPrint ? val.replace(/\n/g, '<br>') : '';
           };
           //var type = returnVal('type', 'depth2');
-            var id = returnVal('id');
-            var depth1 = returnVal('depth1');
-            var depth2 = returnVal('depth2');
-            var depth3 = returnVal('depth3');
-            var path = (function () {
+          var id = returnVal('id');
+          var depth1 = returnVal('depth1');
+          var depth2 = returnVal('depth2');
+          var depth3 = returnVal('depth3');
+          var path = (function () {
             var val = sectionData[j].path;
             var href = '';
             if (val.match(/^\.\//g)) {
@@ -729,8 +802,16 @@
             } else if (val === 'stay') {
               text = '대기중';
             }
-
             return val.length ? '<span class="index-status index-status--' + val + '">' + text + '</span>' : '';
+          })();
+          var share = (function () {
+            var val = sectionData[j].share;
+            var textS = '';
+            if (val === 'comp') {
+              textS = '공유';
+            } else if (val === '') {
+            }
+            return val.length ? '<span class="index-share index-share--' + val + '">' + textS + '</span>' : '';
           })();
           var create = this.create;
           var update = '';
@@ -776,6 +857,9 @@
             '<td>' +
             status +
             '</td>' +
+            '<td>' +
+            share +
+            '</td>' +
             '<td class="' +
             (create === latestDate ? ' is-emphasis' : '') +
             '">' +
@@ -814,6 +898,7 @@
           '<col width="170px" />' +
           '<col width="" />' +
           '<col width="100px" />' +
+          '<col width="70px" />' +
           '<col width="110px" />' +
           '<col width="110px" />' +
           '<col width="300px" />' +
@@ -828,6 +913,7 @@
           '<th>depth3</th>' +
           '<th>path</th>' +
           '<th>status</th>' +
+          '<th>share</th>' +
           '<th>create</th>' +
           '<th>update</th>' +
           '<th>log</th>' +

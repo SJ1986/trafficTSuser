@@ -2,30 +2,6 @@
 @import 'mixin';
 @import 'svg';
 
-.sch{
-    &-area{
-        &--box{
-            label{
-                margin-left:3px;
-                &:first-child{
-                    select{
-                        padding-right:70px;
-                        background-position:95% center;
-                    }
-                }
-                &:nth-child(2){
-                    select{
-                        padding-right:50px;
-                        background-position:90% center;
-                    }
-                }
-            }
-            input{
-                width:285px;
-            }
-        }
-    }
-}
 .table{
     &-wrap{
         margin-top:20px;

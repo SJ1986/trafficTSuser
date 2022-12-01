@@ -47,21 +47,6 @@
   background-position: center center;
 }
 
-.sch-area--box label {
-  margin-left: 3px;
-}
-.sch-area--box label:first-child select {
-  padding-right: 70px;
-  background-position: 95% center;
-}
-.sch-area--box label:nth-child(2) select {
-  padding-right: 50px;
-  background-position: 90% center;
-}
-.sch-area--box input {
-  width: 285px;
-}
-
 .table-wrap {
   margin-top: 20px;
 }

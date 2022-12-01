@@ -9,38 +9,10 @@
 	$('.ui-form').parents('tr').addClass('has-form');
 }))
 
-function lnbFn(){
-	$('.lnb-depth--02').prev('a').attr('href', 'javascript:void(0)').parents('.lnb-item').addClass('hasChild');
-}
-
-$.fn.setSnbMenu = function () {
-	$('> a', this).click(function () {
-		const lnbItem = $(this).parent();
-		const sibling = lnbItem.siblings();
-		const lnbItemDepth2 = $('>ul', lnbItem);
-
-		sibling.removeClass('active');
-		$('ul', sibling).slideUp("fast");
-		lnbItem.toggleClass('active');
-
-		if (lnbItemDepth2.length > 0) {
-			lnbItemDepth2.slideToggle("fast", function () {
-			});
-			return false;
-		} else if ($(this).attr('target') != '_blank') {
-		}
-	});
-};
-
-$.fn.pageInit = function () {
-	$('.lnb-item').setSnbMenu();
-};
-
-
 var $win = $(window);
 var $doc = $(document);
 
-// datepicker
+/* add : 2022.11.30 datepicker event */
 function uiDatePicker($root) {
     if (!$root) {
         $root = $doc;
@@ -136,7 +108,6 @@ $doc.on('click.uiDatepicker', '[data-datepicker-range]', function () {
         setTimeSelectRange($minuteMin, $minuteMax, nowMinute, nowMinute);
     }
 });
-
 function datepickerFn($root){
     if (!$root) {
         $root = $doc;
@@ -145,3 +116,48 @@ function datepickerFn($root){
     uiDatePicker($root);
 }
 window.datepickerFn = datepickerFn;
+/* //add : 2022.11.30 datepicker event */
+
+/* add : 2022.11.30 lnb event */
+function lnbFn(){
+	$('.lnb-depth--02').prev('a').attr('href', 'javascript:void(0)').parents('.lnb-item').addClass('hasChild');
+}
+$.fn.setSnbMenu = function () {
+	$('> a', this).click(function () {
+		const lnbItem = $(this).parent();
+		const sibling = lnbItem.siblings();
+		const lnbItemDepth2 = $('>ul', lnbItem);
+
+		sibling.removeClass('active');
+		$('ul', sibling).slideUp("fast");
+		lnbItem.toggleClass('active');
+
+		if (lnbItemDepth2.length > 0) {
+			lnbItemDepth2.slideToggle("fast", function () {
+			});
+			return false;
+		} else if ($(this).attr('target') != '_blank') {
+		}
+	});
+};
+$.fn.pageInit = function () {
+	$('.lnb-item').setSnbMenu();
+};
+/* //add : 2022.11.30 lnb event */
+
+/* add : 2022.11.30 fileUpload event */
+$('.file__input--file').on('change',function(event){
+    var files = event.target.files;
+    var fileName = $(".file__input--file").val();
+
+    $(".file__upload--name").val(fileName);
+    for (var i = 0; i < files.length; i++) {
+        var file = files[i];
+        $("<div class='file__value'><div class='file__value--text'>" + file.name + "<button type='button' class='file__value--remove' title='첨부파일 닫기'></button></div>" + "</div></div>").insertAfter('#file__input');
+    }
+});
+//Click to remove item
+$('body').on('click', '.file__value--remove', function() {
+    $(this).parents('.file__value').remove();
+});
+/* //add : 2022.11.30 fileUpload event */

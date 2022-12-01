@@ -23,17 +23,6 @@ footer{
     &-row{
         display:flex;
     }
-    &--report{
-        height:36px;
-        padding:0 17px;
-        padding-left:38px;
-        font-size:13px;
-        color:#fff;
-        border:1px solid #fff;
-        border-radius:5px;
-        line-height:36px;
-        background:url('../image/common/icon/icon-exclam--yellow.png') no-repeat 10% 55%/auto;
-    }
     &--sch{
         width:40px;
         height:40px;
@@ -84,5 +73,23 @@ footer{
                 border:1px solid #ccc;
             }
         }
+    }
+    &--report{
+        height:36px;
+        padding:0 17px;
+        padding-left:38px;
+        font-size:13px;
+        color:#fff;
+        border:1px solid #fff;
+        border-radius:5px;
+        line-height:36px;
+        background:url('../image/common/icon/icon-exclam--yellow.png') no-repeat 10% 55%/auto;
+    }
+    &--download{
+        height:auto;
+        margin:0;
+        padding:0;
+        border:none;
+        border-radius:0;
     }
 }
