@@ -145,4 +145,14 @@
   .table-basic--col tr:hover td {
     background-color: #fff9f2;
   }
+  .editor-view {
+    padding: 20px 0;
+  }
+  .editor-view__link {
+    margin: 0;
+    padding: 0;
+  }
+  .editor-view__link:hover {
+    text-decoration: underline;
+  }
 }

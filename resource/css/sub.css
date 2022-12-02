@@ -236,3 +236,11 @@
 .el-essential {
   color: #f18200;
 }
+
+.editor-view {
+  padding: 20px 0;
+}
+.editor-view__link {
+  margin: 0;
+  padding: 0;
+}
