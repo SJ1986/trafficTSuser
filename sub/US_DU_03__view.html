@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../resource/css/lib/bootstrap-datetimepicker.min.css">
     <link rel="stylesheet" href="../resource/css/ux-common.css">
     <link rel="stylesheet" href="../resource/css/sub.css">
-    <link rel="stylesheet" href="../resource/css/commonData.css">
+    <link rel="stylesheet" href="../resource/css/us_du.css">
     <title>TS 한국교통안전공단</title>
 </head>
 <body>
@@ -307,33 +307,115 @@
                         <div class="layout-container layout-full">
                             <div class="layout-container__inner layout-container--row">
                                 <div class="lnb">
-                                    <h3 class="lnb__tit">공공데이터</h3>
+                                    <h3 class="lnb__tit">운행정보보고</h3>
                                     <div class="lnb-list">
                                         <div class="lnb-item">
-                                            <a href="">일반시나리오 데이터셋</a>
+                                            <a href="">교통사고</a>
                                         </div>
                                         <div class="lnb-item">
-                                            <a href="">엣지케이스 시나리오<br/>데이터셋</a>
+                                            <a href="">운행정보보고서</a>
                                         </div>
                                         <div class="lnb-item is-active">
-                                            <a href="">V2X 데이터셋</a>
+                                            <a href="">장치 및 기능변경</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="layout-content">
                                     <div class="layout-content__inner">
                                         <div class="layout-content__top">
-                                            <h4 class="layout-content__tit">V2X 데이터셋</h4>
+                                            <h4 class="layout-content__tit">장치 및 기능변경</h4>
                                             <ul class="location ml-auto">
                                                 <li>
                                                     <img src="../resource/image/sub/icon/icon-home.png" alt="홈">
                                                 </li>
-                                                <li>공공데이터</li>
-                                                <li>V2X 데이터셋</li>
+                                                <li>운행정보보고</li>
+                                                <li>장치 및 기능변경</li>
                                             </ul>
                                         </div>
-                                        
-                                        
+                                        <h5 class="layout-content__subtit d-flex align-end">
+                                            상세정보
+                                            <button type="button" class="btn btn-width--m btn-color--navy ml-auto d-flex align-center justify-center">
+                                                <img src="../resource/image/common/icon/icon-file--s.png" class="mr-10" alt="">
+                                                보고서 생성
+                                            </button>
+                                        </h5>
+                                        <div class="table-wrap">
+                                            <table class="table-basic table-basic--row">
+                                                <caption>운행정보보고 &gt; 운행정보보고서 &gt; 장치 및 기능변경 상세정보 테이블</caption>
+                                                <colgroup>
+                                                    <col style="width:18%">
+                                                    <col style="width:auto">
+                                                    <col style="width:18%">
+                                                    <col style="width:34%">
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">임시운행기관</th>
+                                                        <td>자동차안전연구원</td>
+                                                        <th scope="row">임시운행등록번호</th>
+                                                        <td>2022-016</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table class="table-basic table-basic--row mt-20">
+                                                <caption>운행정보보고 &gt; 운행정보보고서 &gt; 장치 및 기능변경 상세정보 테이블</caption>
+                                                <colgroup>
+                                                    <col style="width:18%">
+                                                    <col style="width:auto">
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">변경일자</th>
+                                                        <td colspan="3">2022-01-01</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <h5 class="layout-content__subtit">구조 및 장치변경</h5>
+                                        <table class="table-basic table-basic--row mt-20 table-us_du_03_view--03">
+                                            <caption>운행정보보고 &gt; 운행정보보고서 &gt; 운행정보보고서 상세정보 테이블</caption>
+                                            <colgroup>
+                                                <col style="width:25%">
+                                                <col style="width:auto">
+                                                <col style="width:37%">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row" rowspan="3">변경사항 사양비교</th>
+                                                    <th scope="col">변경전</th>
+                                                    <th scope="col">변경후</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>LiDAR(Velodyne), PC 종류(Nuvo-5002) 등 변경</td>
+                                                    <td>LiDAR(Hesai), PC 종류(Nuvo-8180G) 등 변경</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>9E_(변경전)임시운행허가 HW변경사항-20211025-pm04.pptx</td>
+                                                    <td>9F_(변경후)임시운행허가 HW변경사항-20211025-pm04.pptx</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="table-basic table-basic--row mt-20 table-us_du_03_view--04">
+                                            <caption>운행정보보고 &gt; 운행정보보고서 &gt; 운행정보보고서 상세정보 테이블</caption>
+                                            <colgroup>
+                                                <col style="width:25%">
+                                                <col style="width:auto">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">변경 내용기술</th>
+                                                    <td>
+                                                        HW발전에 따라 LiDAR 센서 및 PC를 신형으로 업그레이드 했습니다. 장애물 검지거리 및 정확도가 향상될 것으로 예상하고 있습니다. 주행모드, 작동 및 속도범위는 변경사항 없습니다. LiDAR: Velodyne Puck 16ch, 3대 --> HESAI Pandar64, PandarQT, 총 3대 (수량동일) VisionPC: Intel Xeon D1587, NVIDIA Tesla P4 --> Intel Xeon E-2278GE, NVIDIA Titan RTX PlanningPC: Intel i7-6700, Intel HD Graphics 530 --> Intel Xeon E-2278GE, NVIDIA RTX2080TI LoggingPC: Nuvo-5002LP i7 --> NVIDIA Jetson Nano GPS(참조용): Advanced Navigation, Spatial Fog Dual --> Advanced Navigation, Certus Evo 기타: 운전자 변경
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="btn-wrap btn-row justify-center mt-30 mb-80">
+                                            <button type="button" class="btn btn-width--l btn-color--white">삭제</button>
+                                            <button type="button" class="btn btn-width--l btn-color--gray">수정</button>
+                                            <button type="button" class="btn btn-width--l btn-color--navy">목록으로</button>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>

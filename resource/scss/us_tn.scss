@@ -1,0 +1,17 @@
+@charset 'UTF-8';
+
+.table{
+    &-wrap{
+        margin-top:20px;
+    }
+    &-basic{
+        &.table-us_du_03_list{
+            td{
+                text-align:center;
+                &:nth-child(2){
+                    text-align:left;
+                }
+            }
+        }
+    }
+}

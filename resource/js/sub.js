@@ -152,16 +152,26 @@ $.fn.pageInit = function () {
 
 /* add : 2022.11.30 fileUpload event */
 $('.file__input--file').on('change',function(event){
+    var $this = $(this);
+    var thisParent = $this.parent();
     var files = event.target.files;
-    var fileName = $(".file__input--file").val();
+    var fileValue = $(this).val();
+    var filename = $(this).next();
 
-    $(".file__upload--name").val(fileName);
+    filename.val(fileValue);
     for (var i = 0; i < files.length; i++) {
         var file = files[i];
-        $("<div class='file__value'><div class='file__value--text'>" + file.name + "<button type='button' class='file__value--remove' title='첨부파일 닫기'></button></div>" + "</div></div>").insertAfter('#file__input');
+        $("<div class='file__value'><div class='file__value--text'>" + file.name + "<button type='button' class='file__value--remove' title='첨부파일 닫기'></button></div>" + "</div></div>").insertAfter(thisParent);
     }
+
 });
-    //Click to remove item
+$('.file__input--find').on('change',function(event){
+    var fileValue = $(this).val();
+    var filename = $(this).next();
+
+    filename.val(fileValue);
+});
+//Click to remove item
 $('body').on('click', '.file__value--remove', function() {
     $(this).parents('.file__value').remove();
 });

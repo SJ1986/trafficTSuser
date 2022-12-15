@@ -19,6 +19,16 @@
             }
         }
     }
+    &-basic{
+        &.table-us_ag_05_07_list{
+            td{
+                text-align:center;
+                &:first-child{
+                    text-align:left;
+                }
+            }
+        }
+    }
 }
 .layout{
     &-content{

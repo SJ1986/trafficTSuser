@@ -10,13 +10,18 @@
                 padding:15px;                
             }
         }
+        &.table-us_du_01_list, &.table-us_du_02_list{
+            td{
+                text-align:center;
+            }
+        }
         &.table-us_du_02_write--04{
             tr{
                 &.has-form{
                     td{
-                        padding:5px 25px;
+                        padding:5px 20px;
                         &:first-child{
-                            padding:5px 25px;
+                            padding:5px 20px;
                         }
                         &:nth-child(2){
                             padding:5px 10px;
@@ -27,7 +32,7 @@
                     &.has-form{
                         td{
                             &:nth-child(2){
-                                padding:5px 25px;
+                                padding:5px 20px;
                             }
                             &:nth-child(3){
                                 padding:5px 10px;
@@ -35,6 +40,41 @@
                         }
                     }
                 }
+            }
+        }
+        &.table-us_du_02_write--05{
+            td{
+                background-color:#fff;
+                + td{
+                    border-left:1px solid #eceff0;
+                }
+            }
+        }
+        &.table-us_du_03_list{
+            td{
+                text-align:center;
+            }
+        }
+        &.table-us_du_03_view--03{
+            th{
+                &[scope="col"]{
+                    border-left:1px solid #eceff0;
+                    text-align:center;
+                }
+            }
+            td{
+                border-left:1px solid #eceff0;
+            }
+        }
+        &.table-us_du_03_write--02, &.table-us_du_03_write--03, &.table-us_du_03_write--04{
+            th{
+                &[scope="col"]{
+                    border-left:1px solid #eceff0;
+                    text-align:center;
+                }
+            }
+            td{
+                border-left:1px solid #eceff0;
             }
         }
     }
@@ -59,6 +99,18 @@
         &--name{
             &:disabled{
                 background-color:#fff;
+            }
+        }
+    }
+    .ui-form-width--auto{
+        width:auto;
+    }
+}
+.page{
+    &-wrap{
+        .btn-wrap{
+            &.justify-end{
+                justify-content: flex-end;
             }
         }
     }

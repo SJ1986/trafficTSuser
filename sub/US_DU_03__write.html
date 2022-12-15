@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../resource/css/lib/bootstrap-datetimepicker.min.css">
     <link rel="stylesheet" href="../resource/css/ux-common.css">
     <link rel="stylesheet" href="../resource/css/sub.css">
-    <link rel="stylesheet" href="../resource/css/commonData.css">
+    <link rel="stylesheet" href="../resource/css/us_du.css">
     <title>TS 한국교통안전공단</title>
 </head>
 <body>
@@ -307,33 +307,350 @@
                         <div class="layout-container layout-full">
                             <div class="layout-container__inner layout-container--row">
                                 <div class="lnb">
-                                    <h3 class="lnb__tit">공공데이터</h3>
+                                    <h3 class="lnb__tit">운행정보보고</h3>
                                     <div class="lnb-list">
                                         <div class="lnb-item">
-                                            <a href="">일반시나리오 데이터셋</a>
+                                            <a href="">교통사고</a>
                                         </div>
                                         <div class="lnb-item">
-                                            <a href="">엣지케이스 시나리오<br/>데이터셋</a>
+                                            <a href="">운행정보보고서</a>
                                         </div>
                                         <div class="lnb-item is-active">
-                                            <a href="">V2X 데이터셋</a>
+                                            <a href="">장치 및 기능변경</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="layout-content">
                                     <div class="layout-content__inner">
                                         <div class="layout-content__top">
-                                            <h4 class="layout-content__tit">V2X 데이터셋</h4>
+                                            <h4 class="layout-content__tit">장치 및 기능변경</h4>
                                             <ul class="location ml-auto">
                                                 <li>
                                                     <img src="../resource/image/sub/icon/icon-home.png" alt="홈">
                                                 </li>
-                                                <li>공공데이터</li>
-                                                <li>V2X 데이터셋</li>
+                                                <li>운행정보보고</li>
+                                                <li>장치 및 기능변경</li>
                                             </ul>
                                         </div>
+                                        <h5 class="layout-content__subtit d-flex">
+                                            장치 및 기능변경 등록
+                                        </h5>
+                                        <div class="table-wrap">
+                                            <table class="table-basic table-basic--row">
+                                                <caption>운행정보보고 &gt; 장치 및 기능변경 &gt; 장치 및 기능변경 등록 테이블</caption>
+                                                <colgroup>
+                                                    <col style="width:18%">
+                                                    <col style="width:auto">
+                                                    <col style="width:18%">
+                                                    <col style="width:34%">
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <span class="el-essential">*</span>
+                                                            임시운행기관
+                                                        </th>
+                                                        <td>
+                                                            자동차안전연구원
+                                                        </td>
+                                                        <th scope="row">임시운행등록번호</th>
+                                                        <td>2022-016</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <span class="el-essential">*</span>
+                                                            변경일자
+                                                        </th>
+                                                        <td>
+                                                            <div class="ui-form ui-form-row align-center js-datepicker">
+                                                                <div class="ui-form-block">
+                                                                    <input type="text" class="ui-input ui-form-width--140 js-datepicker" value="2022-11-02" title="사고일시">
+                                                                    <label for="">
+                                                                        <select name="" id="" class="ui-form-width--xs" title="사고일시 시 선택">
+                                                                            <option>00</option>
+                                                                            <option>01</option>
+                                                                            <option>02</option>
+                                                                            <option>03</option>
+                                                                            <option>04</option>
+                                                                            <option>05</option>
+                                                                        </select>
+                                                                    </label>
+                                                                    시
+                                                                    <label for="" class="ml-10">
+                                                                        <select name="" id="" class="ui-form-width--xs" title="사고일시 분 선택">
+                                                                            <option>00</option>
+                                                                            <option>01</option>
+                                                                            <option>02</option>
+                                                                            <option>03</option>
+                                                                            <option>04</option>
+                                                                            <option>05</option>
+                                                                        </select>
+                                                                    </label>
+                                                                    분
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            
+                                        </div>
+                                        <h5 class="layout-content__subtit d-flex align-end">
+                                            주행모드
+                                            <div class="ui-form ml-auto">
+                                                <form action="" class="ui-form-row">
+                                                    <label for="radio_drivingModY">
+                                                        <input type="radio" name="radio_drivingMod" checked id="radio_drivingModY" class="ui-input ui-input-radio">
+                                                        <span class="ui-input-radio__span"></span>
+                                                        <span class="ui-input-radio__txt">변경</span>
+                                                    </label>
+                                                    <label for="radio_drivingModN" class="ml-30">
+                                                        <input type="radio" name="radio_drivingMod" id="radio_drivingModN" class="ui-input ui-input-radio">
+                                                        <span class="ui-input-radio__span"></span>
+                                                        <span class="ui-input-radio__txt">변경안함</span>
+                                                    </label>
+                                                </form>
+                                            </div>
+                                        </h5>
+                                        <table class="table-basic table-basic--row mt-20 table-us_du_03_write--02">
+                                            <caption>운행정보보고 &gt; 장치 및 기능변경 &gt; 주행모드 테이블</caption>
+                                            <colgroup>
+                                                <col style="width:25%">
+                                                <col style="width:auto">
+                                                <col style="width:37%">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row" rowspan="3">변경사항 사양비교</th>
+                                                    <th scope="col">변경전</th>
+                                                    <th scope="col">변경후</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="ui-form ui-form-row align-center">
+                                                            <div class="ui-form-block ui-form-width--full">
+                                                                <input type="text" class="ui-input ui-form-width--full" title="주행모드 변경전 입력">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="ui-form ui-form-row align-center">
+                                                            <div class="ui-form-block ui-form-width--full">
+                                                                <input type="text" class="ui-input ui-form-width--full" title="주행모드 변경후 입력">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="ui-form">
+                                                            <form action="">
+                                                                <div class="file">
+                                                                    <div class="file__input ui-form-width--auto" id="file__input">
+                                                                        <input class="file__input--find" id="customFile1" type="file" multiple="multiple" name="files[]">
+                                                                        <input class="file__upload--name ui-form-width--auto flex-1" disabled="" placeholder="선택된 파일 없음">
+                                                                        <label class="file__input--label file__input--labelFind" for="customFile1">파일찾기</label>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="ui-form">
+                                                            <form action="">
+                                                                <div class="file">
+                                                                    <div class="file__input ui-form-width--auto" id="file__input">
+                                                                        <input class="file__input--find" id="customFile2" type="file" multiple="multiple" name="files[]">
+                                                                        <input class="file__upload--name ui-form-width--auto flex-1" disabled="" placeholder="선택된 파일 없음">
+                                                                        <label class="file__input--label file__input--labelFind" for="customFile2">파일찾기</label>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <h5 class="layout-content__subtit d-flex align-end mt-30">
+                                            작동 및 속도범위
+                                            <div class="ui-form ml-auto">
+                                                <form action="" class="ui-form-row">
+                                                    <label for="radio_speedY">
+                                                        <input type="radio" name="radio_speedMod" checked id="radio_speedY" class="ui-input ui-input-radio">
+                                                        <span class="ui-input-radio__span"></span>
+                                                        <span class="ui-input-radio__txt">변경</span>
+                                                    </label>
+                                                    <label for="radio_speedN" class="ml-30">
+                                                        <input type="radio" name="radio_speedMod" id="radio_speedN" class="ui-input ui-input-radio">
+                                                        <span class="ui-input-radio__span"></span>
+                                                        <span class="ui-input-radio__txt">변경안함</span>
+                                                    </label>
+                                                </form>
+                                            </div>
+                                        </h5>
+                                        <table class="table-basic table-basic--row mt-20 table-us_du_03_write--02">
+                                            <caption>운행정보보고 &gt; 장치 및 기능변경 &gt; 작동 및 속도범위 테이블</caption>
+                                            <colgroup>
+                                                <col style="width:25%">
+                                                <col style="width:auto">
+                                                <col style="width:37%">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row" rowspan="3">변경사항 사양비교</th>
+                                                    <th scope="col">변경전</th>
+                                                    <th scope="col">변경후</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="ui-form ui-form-row align-center">
+                                                            <div class="ui-form-block ui-form-width--full">
+                                                                <input type="text" class="ui-input ui-form-width--full" title="작동 및 속도범위 변경전 입력">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="ui-form ui-form-row align-center">
+                                                            <div class="ui-form-block ui-form-width--full">
+                                                                <input type="text" class="ui-input ui-form-width--full" title="작동 및 속도범위 변경후 입력">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="ui-form">
+                                                            <form action="">
+                                                                <div class="file">
+                                                                    <div class="file__input ui-form-width--auto" id="file__input">
+                                                                        <input class="file__input--find" id="customFile3" type="file" multiple="multiple" name="files[]">
+                                                                        <input class="file__upload--name ui-form-width--auto flex-1" disabled="" placeholder="선택된 파일 없음">
+                                                                        <label class="file__input--label file__input--labelFind" for="customFile3">파일찾기</label>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="ui-form">
+                                                            <form action="">
+                                                                <div class="file">
+                                                                    <div class="file__input ui-form-width--auto" id="file__input">
+                                                                        <input class="file__input--find" id="customFile4" type="file" multiple="multiple" name="files[]">
+                                                                        <input class="file__upload--name ui-form-width--auto flex-1" disabled="" placeholder="선택된 파일 없음">
+                                                                        <label class="file__input--label file__input--labelFind" for="customFile4">파일찾기</label>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <h5 class="layout-content__subtit d-flex align-end mt-30">
+                                            구조 및 장치변경
+                                            <div class="ui-form ml-auto">
+                                                <form action="" class="ui-form-row">
+                                                    <label for="radio_equipChangeY">
+                                                        <input type="radio" name="radio_equipMod" checked id="radio_equipChangeY" class="ui-input ui-input-radio">
+                                                        <span class="ui-input-radio__span"></span>
+                                                        <span class="ui-input-radio__txt">변경</span>
+                                                    </label>
+                                                    <label for="radio_equipChangeN" class="ml-30">
+                                                        <input type="radio" name="radio_equipMod" id="radio_equipChangeN" class="ui-input ui-input-radio">
+                                                        <span class="ui-input-radio__span"></span>
+                                                        <span class="ui-input-radio__txt">변경안함</span>
+                                                    </label>
+                                                </form>
+                                            </div>
+                                        </h5>
+                                        <table class="table-basic table-basic--row mt-20 table-us_du_03_write--02">
+                                            <caption>운행정보보고 &gt; 장치 및 기능변경 &gt; 구조 및 장치변경 테이블</caption>
+                                            <colgroup>
+                                                <col style="width:25%">
+                                                <col style="width:auto">
+                                                <col style="width:37%">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row" rowspan="3">변경사항 사양비교</th>
+                                                    <th scope="col">변경전</th>
+                                                    <th scope="col">변경후</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="ui-form ui-form-row align-center">
+                                                            <div class="ui-form-block ui-form-width--full">
+                                                                <input type="text" class="ui-input ui-form-width--full" title="구조 및 장치변경 변경전 입력">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="ui-form ui-form-row align-center">
+                                                            <div class="ui-form-block ui-form-width--full">
+                                                                <input type="text" class="ui-input ui-form-width--full" title="구조 및 장치변경 변경후 입력">
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="ui-form">
+                                                            <form action="">
+                                                                <div class="file">
+                                                                    <div class="file__input ui-form-width--auto" id="file__input">
+                                                                        <input class="file__input--find" id="customFile5" type="file" multiple="multiple" name="files[]">
+                                                                        <input class="file__upload--name ui-form-width--auto flex-1" disabled="" placeholder="선택된 파일 없음">
+                                                                        <label class="file__input--label file__input--labelFind" for="customFile5">파일찾기</label>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <div class="ui-form">
+                                                            <form action="">
+                                                                <div class="file">
+                                                                    <div class="file__input ui-form-width--auto" id="file__input">
+                                                                        <input class="file__input--find" id="customFile6" type="file" multiple="multiple" name="files[]">
+                                                                        <input class="file__upload--name ui-form-width--auto flex-1" disabled="" placeholder="선택된 파일 없음">
+                                                                        <label class="file__input--label file__input--labelFind" for="customFile6">파일찾기</label>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <table class="table-basic table-basic--row mt-20 table-us_du_03_write--02">
+                                            <caption>운행정보보고 &gt; 장치 및 기능변경 &gt; 구조 및 장치변경 변경 내용기술 테이블</caption>
+                                            <colgroup>
+                                                <col style="width:25%">
+                                                <col style="width:auto">
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">
+                                                        <span class="el-essential">*</span>
+                                                        변경사항 사양비교
+                                                    </th>
+                                                    <td>
+                                                        <div class="ui-form">
+                                                            <form action="">
+                                                                <textarea name="" id="" class="ui-form-width--full ui-form-height--100"></textarea>
+                                                            </form>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                         
-                                        
+                                        <div class="btn-wrap btn-row justify-center mt-30 mb-80">
+                                            <button type="button" class="btn btn-width--l btn-color--white">취소</button>
+                                            <button type="button" class="btn btn-width--l btn-color--navy">등록</button>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>

@@ -267,6 +267,13 @@
 .el-essential {
   color: #f18200;
 }
+.el-box {
+  padding: 25px 15px;
+  background-color: #f7f7f7;
+}
+.el-box--border {
+  border: 1px solid #d7d9e0;
+}
 
 .editor-view {
   padding: 20px 0;

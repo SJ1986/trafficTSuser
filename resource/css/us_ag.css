@@ -10,6 +10,12 @@
 .table--us_ag_05_list td {
   text-align: center;
 }
+.table-basic.table-us_ag_05_07_list td {
+  text-align: center;
+}
+.table-basic.table-us_ag_05_07_list td:first-child {
+  text-align: left;
+}
 
 .layout-content__subtit + .sch-area {
   margin-top: 20px;
