@@ -4,4 +4,62 @@
     &-wrap{
         margin-top:20px;
     }
+    &-basic{
+        &--row{
+            th{
+                padding:15px;                
+            }
+        }
+        &.table-us_du_02_write--04{
+            tr{
+                &.has-form{
+                    td{
+                        padding:5px 25px;
+                        &:first-child{
+                            padding:5px 25px;
+                        }
+                        &:nth-child(2){
+                            padding:5px 10px;
+                        }
+                    }
+                }
+                &:first-child{
+                    &.has-form{
+                        td{
+                            &:nth-child(2){
+                                padding:5px 25px;
+                            }
+                            &:nth-child(3){
+                                padding:5px 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-us_du_02_view--04, &-us_du_02_write--04{
+        th{
+            + td{
+                border-left:1px solid #eceff0;
+            }
+        }
+        td{
+            border-left:1px solid #eceff0;
+        }
+    }
+    &-us_du_02_view--05{
+        th{
+            text-align:left;
+        }
+    }
+}
+.file{
+    &__upload{
+        &--name{
+            &:disabled{
+                background-color:#fff;
+            }
+        }
+    }
 }

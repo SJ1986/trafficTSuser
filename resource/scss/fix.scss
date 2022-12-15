@@ -34,15 +34,47 @@
         &-auto{
             margin-left:auto;
         }
+        &-5{
+            margin-left:5px !important;
+        }
+        &-10{
+            margin-left:10px;
+        }
     }
     &t{
+        &-10{
+            margin-top:10px;
+        }
+        &-20{
+            margin-top:20px;
+        }
         &-30{
             margin-top:30px;
+        }
+        &-40{
+            margin-top:40px;
+        }
+        &-50{
+            margin-top:50px;
         }
     }
     &b{
         &-80{
             margin-bottom:80px;
+        }
+    }
+    &r{
+        &-5{
+            margin-right:5px !important;
+        }
+        &-10{
+            margin-right:10px;
+        }
+    }
+    &x{
+        &-10{
+            margin-left:10px;
+            margin-right:10px;
         }
     }
 }

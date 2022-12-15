@@ -332,143 +332,531 @@
                                                 <li>교통사고</li>
                                             </ul>
                                         </div>
-                                        <div class="sch-area sch-area--box sch-area--gray">
-                                            <div class="sch-form sch-form--row">
-                                                <form action="">
-                                                    <label for="">
-                                                        <select name="" id="" title="운행정보보고 교통사고 구분항목 선택">
-                                                            <option>전체</option>
-                                                            <option>임시운행기관</option>
-                                                            <option>임시운행등록번호</option>
-                                                        </select>
-                                                    </label>
-                                                    <label for="">
-                                                        <input type="text" name="" id="" title="검색어 입력" placeholder="검색어를 입력해주세요.">
-                                                    </label>
-                                                    <button type="butotn" class="btn btn--sch" title="검색"></button>
-                                                </form>
-                                            </div>
-                                        </div>
+                                        <h5 class="layout-content__subtit">기관정보</h5>
                                         <div class="table-wrap">
-                                            <div class="table-cap">
-                                                <p class="table-cap__count">
-                                                    총 <span>999</span> 건
-                                                </p>
-                                                <p class="table-cap__page">
-                                                    페이지 <span>1</span>/20
-                                                </p>
-                                            </div>
-                                            <table class="table-basic table-basic--col table--us_du_01_write">
-                                                <caption>운행정보보고 &gt; 교통사고 테이블</caption>
+                                            <table class="table-basic table-basic--row table--myUpload">
+                                                <caption>운행정보보고 &gt; 교통사고 &gt; 기관정보 테이블</caption>
                                                 <colgroup>
-                                                    <col style="width:20%">
-                                                    <col style="width:20%">
+                                                    <col style="width:18%">
                                                     <col style="width:auto">
-                                                    <col style="width:20%">
-                                                    <col style="width:20%">
+                                                    <col style="width:18%">
+                                                    <col style="width:34%">
                                                 </colgroup>
-                                                <thead>
-                                                    <tr>
-                                                        <th scope="col">임시운행기관</th>
-                                                        <th scope="col">임시운행등록번호</th>
-                                                        <th scope="col">사고장소</th>
-                                                        <th scope="col">사고일시</th>
-                                                        <th scope="col">등록일시</th>
-                                                    </tr>
-                                                </thead>
                                                 <tbody>
                                                     <tr>
-                                                        <td>자동차부품연구원</td>
-                                                        <td>2019-001</td>
-                                                        <td>없음</td>
-                                                        <td>2020-06-30 00:00</td>
-                                                        <td>2020-07-10 13:27</td>
+                                                        <th scope="row">임시운행등록번호</th>
+                                                        <td>2019-011</td>
+                                                        <th scope="row">임시운행기관</th>
+                                                        <td>자동차안전연구원</td>
                                                     </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <h5 class="layout-content__subtit">사고개요</h5>
+                                        <div class="table-wrap">
+                                            <table class="table-basic table-basic--row table--myUpload">
+                                                <caption>운행정보보고 &gt; 교통사고 &gt; 사고개요 테이블</caption>
+                                                <colgroup>
+                                                    <col style="width:18%">
+                                                    <col style="width:auto">
+                                                    <col style="width:18%">
+                                                    <col style="width:34%">
+                                                </colgroup>
+                                                <tbody>
                                                     <tr>
-                                                        <td>차세대융합기술연구원</td>
-                                                        <td>2019-001</td>
-                                                        <td>경기도 성남시 금토동</td>
-                                                        <td>2020-06-30 00:00</td>
+                                                        <th scope="row">
+                                                            <span class="el-essential">*</span>
+                                                            사고일시
+                                                        </th>
                                                         <td>
-                                                            <span class="color-red">2020-07-10 13:27</span>
+                                                            <div class="ui-form ui-form-row align-center js-datepicker">
+                                                                <div class="ui-form-block">
+                                                                    <input type="text" class="ui-input ui-form-width--140 js-datepicker" value="2022-11-02" title="사고일시" />
+                                                                    <label for="">
+                                                                        <select name="" id="" class="ui-form-width--xs" title="사고일시 시 선택">
+                                                                            <option>00</option>
+                                                                            <option>01</option>
+                                                                            <option>02</option>
+                                                                            <option>03</option>
+                                                                            <option>04</option>
+                                                                            <option>05</option>
+                                                                        </select>
+                                                                    </label>
+                                                                    시
+                                                                    <label for="" class="ml-10">
+                                                                        <select name="" id="" class="ui-form-width--xs" title="사고일시 분 선택">
+                                                                            <option>00</option>
+                                                                            <option>01</option>
+                                                                            <option>02</option>
+                                                                            <option>03</option>
+                                                                            <option>04</option>
+                                                                            <option>05</option>
+                                                                        </select>
+                                                                    </label>
+                                                                    분
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <th scope="row">
+                                                            <span class="el-essential">*</span>
+                                                            사고장소
+                                                        </th>
+                                                        <td>
+                                                            <div class="ui-form">
+                                                                <div class="ui-form-block">
+                                                                    <input type="text" class="ui-input ui-form-width--full" title="사고장소 입력">
+                                                                </div>
+                                                            </div>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td>자동차부품연구원</td>
-                                                        <td>2019-001</td>
-                                                        <td>없음</td>
-                                                        <td>2020-06-30 00:00</td>
-                                                        <td>2020-07-10 13:27</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>차세대융합기술연구원</td>
-                                                        <td>2019-001</td>
-                                                        <td>경기도 성남시 금토동</td>
-                                                        <td>2020-06-30 00:00</td>
+                                                        <th scope="row">
+                                                            <span class="el-essential">*</span>
+                                                            기상상황
+                                                        </th>
                                                         <td>
-                                                            2020-07-10 13:27
+                                                            <div class="ui-form">
+                                                                <div class="ui-form-block">
+                                                                    <label for="" class="ui-form-width--r">
+                                                                        <select name="" id=""  class="ui-form-width--r" title="기상상황 선택">
+                                                                            <option>맑음</option>
+                                                                            <option>구름조금</option>
+                                                                            <option>흐림</option>
+                                                                            <option>비</option>
+                                                                            <option>눈</option>
+                                                                            <option>안개</option>
+                                                                            <option>기타</option>
+                                                                        </select>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <th scope="row">
+                                                            <span class="el-essential">*</span>
+                                                            도로상황
+                                                        </th>
+                                                        <td>
+                                                            <div class="ui-form">
+                                                                <div class="ui-form-block">
+                                                                    <label for="" class="ui-form-width--r">
+                                                                        <select name="" id=""  class="ui-form-width--r" title="도로상황 선택">
+                                                                            <option>소통원활</option>
+                                                                            <option>지체</option>
+                                                                            <option>정체</option>
+                                                                            <option>돌발</option>
+                                                                            <option>기타 </option>
+                                                                        </select>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td>자동차부품연구원</td>
-                                                        <td>2019-001</td>
-                                                        <td>없음</td>
-                                                        <td>2020-06-30 00:00</td>
-                                                        <td>2020-07-10 13:27</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>차세대융합기술연구원</td>
-                                                        <td>2019-001</td>
-                                                        <td>경기도 성남시 금토동</td>
-                                                        <td>2020-06-30 00:00</td>
+                                                        <th scope="row">도로유형</th>
                                                         <td>
-                                                            2020-07-10 13:27
+                                                            <div class="ui-form">
+                                                                <div class="ui-form-block">
+                                                                    <label for="" class="ui-form-width--r">
+                                                                        <select name="" id=""  class="ui-form-width--r" title="도로유형 선택">
+                                                                            <option>고속도로</option>
+                                                                            <option>도시고속도로</option>
+                                                                            <option>주간선도로</option>
+                                                                            <option>보조간선도로</option>
+                                                                            <option>집산도로</option>
+                                                                            <option>국지도로</option>
+                                                                            <option>특수도로</option>
+                                                                            <option>주차장</option>
+                                                                            <option>기타  </option>
+                                                                        </select>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <th scope="row"></th>
+                                                        <td></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <h5 class="layout-content__subtit">자율주행 자동차</h5>
+                                        <div class="table-wrap">
+                                            <table class="table-basic table-basic--row table--myUpload">
+                                                <caption>운행정보보고 &gt; 교통사고 &gt; 자율주행 자동차 테이블</caption>
+                                                <colgroup>
+                                                    <col style="width:18%">
+                                                    <col style="width:auto">
+                                                    <col style="width:18%">
+                                                    <col style="width:34%">
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            <span class="el-essential">*</span>
+                                                            주행모드
+                                                        </th>
+                                                        <td>
+                                                            <div class="ui-form">
+                                                                <div class="ui-form-block">
+                                                                    <label for="" class="ui-form-width--r">
+                                                                        <select name="" id=""  class="ui-form-width--r" title="주행모드 선택">
+                                                                            <option>자율주행모드</option>
+                                                                            <option>일반주행모드</option>
+                                                                        </select>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <th scope="row">
+                                                            <span class="el-essential">*</span>
+                                                            주행상태
+                                                        </th>
+                                                        <td>
+                                                            <div class="ui-form">
+                                                                <div class="ui-form-block">
+                                                                    <label for="" class="ui-form-width--r">
+                                                                        <select name="" id=""  class="ui-form-width--r" title="주행상태 선택">
+                                                                            <option>이동상태</option>
+                                                                            <option>정지상태</option>
+                                                                        </select>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <td>자동차부품연구원</td>
-                                                        <td>2019-001</td>
-                                                        <td>없음</td>
-                                                        <td>2020-06-30 00:00</td>
-                                                        <td>2020-07-10 13:27</td>
+                                                        <th scope="row">
+                                                            운행속도
+                                                        </th>
+                                                        <td>
+                                                            <div class="ui-form">
+                                                                <div class="ui-form-block">
+                                                                    <input type="text" class="ui-input ui-form-width--s" title="운행속도 입력">
+                                                                    km/h
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <th scope="row">
+                                                            승차인원
+                                                        </th>
+                                                        <td>
+                                                            <div class="ui-form">
+                                                                <div class="ui-form-block">
+                                                                    <input type="text" class="ui-input ui-form-width--s" title="승차인원 입력">
+                                                                    명
+                                                                </div>
+                                                            </div>
+                                                        </td>
                                                     </tr>
                                                     <tr>
-                                                        <td>차세대융합기술연구원</td>
-                                                        <td>2019-001</td>
-                                                        <td>경기도 성남시 금토동</td>
-                                                        <td>2020-06-30 00:00</td>
+                                                        <th scope="row">적재량</th>
                                                         <td>
-                                                            2020-07-10 13:27
+                                                            <div class="ui-form">
+                                                                <div class="ui-form-block">
+                                                                    <input type="text" class="ui-input ui-form-width--s" title="적재량 입력">
+                                                                    kg
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <th scope="row">파손정도</th>
+                                                        <td>
+                                                            <div class="ui-form">
+                                                                <div class="ui-form-block">
+                                                                    <label for="" class="ui-form-width--r">
+                                                                        <select name="" id=""  class="ui-form-width--s" title="파손정도 선택">
+                                                                            <option>상</option>
+                                                                            <option>중</option>
+                                                                            <option>하</option>
+                                                                        </select>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">인적피해</th>
+                                                        <td>
+                                                            <div class="ui-form">
+                                                                <div class="ui-form-block  ui-form-row align-center">
+                                                                    <label for="" class="mr-10">
+                                                                        <select name="" id=""  class="ui-form-width--100" title="인적피해자 선택">
+                                                                            <option>가해자</option>
+                                                                            <option>피해자</option>
+                                                                        </select>
+                                                                    </label>
+                                                                    성별
+                                                                    <label for="" class="ml-5 mr-10">
+                                                                        <select name="" id=""  class="ui-form-width--xs" title="인적피해 성별 선택">
+                                                                            <option>남</option>
+                                                                            <option>여</option>
+                                                                        </select>
+                                                                    </label>
+                                                                    나이
+                                                                    <label for="" class="ml-5">
+                                                                        <select name="" id=""  class="ui-form-width--xs" title="인적피해 나이 선택">
+                                                                            <option>19</option>
+                                                                            <option>20</option>
+                                                                            <option>21</option>
+                                                                            <option>22</option>
+                                                                            <option>23</option>
+                                                                            <option>24</option>
+                                                                            <option>25</option>
+                                                                            <option>26</option>
+                                                                        </select>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <th scope="row"></th>
+                                                        <td>
                                                         </td>
                                                     </tr>
                                                 </tbody>
                                             </table>
                                         </div>
-                                        <div class="paging">
-                                            <a href="" class="page-link page-link--first">
-                                                <img src="../resource/image/common/icon/icon-page-link--first.png" alt="">
-                                            </a>
-                                            <a href="" class="page-link page-link--prev">
-                                                <img src="../resource/image/common/icon/icon-page-link--prev.png" alt="">
-                                            </a>
-                                            <a href="" class="active" title="선택됨">1</a>
-                                            <a href="">2</a>
-                                            <a href="">3</a>
-                                            <a href="">4</a>
-                                            <a href="">5</a>
-                                            <a href="">6</a>
-                                            <a href="">7</a>
-                                            <a href="">8</a>
-                                            <a href="">9</a>
-                                            <a href="">10</a>
-                                            <a href="" class="page-link page-link--next">
-                                                <img src="../resource/image/common/icon/icon-page-link--next.png" alt="">
-                                            </a>
-                                            <a href="" class="page-link page-link--last">
-                                                <img src="../resource/image/common/icon/icon-page-link--last.png" alt="">
-                                            </a>
+                                        <h5 class="layout-content__subtit d-flex">
+                                            사고차량
+                                            <button type="button" class="btn btn-width--s btn-color--navy ml-auto js-clone" data-target="cloneAccident">
+                                                <img src="../resource/image/common/icon/icon-plus.png" alt="">
+                                                행 추가
+                                            </button>
+                                        </h5>
+                                        <div class="table-wrap" id="cloneAccident">
+                                            <table class="table-basic table-basic--row">
+                                                <caption>운행정보보고 &gt; 교통사고 &gt; 사고차량 테이블</caption>
+                                                <colgroup>
+                                                    <col style="width:18%">
+                                                    <col style="width:auto">
+                                                    <col style="width:18%">
+                                                    <col style="width:34%">
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            사고차량종류
+                                                        </th>
+                                                        <td>
+                                                            <div class="ui-form">
+                                                                <div class="ui-form-block">
+                                                                    <label for="" class="ui-form-width--r">
+                                                                        <select name="" id=""  class="ui-form-width--r" title="사고차량종류 선택">
+                                                                            <option>사고차없음</option>
+                                                                            <option>자율주행자동차</option>
+                                                                            <option>일반자동차  </option>
+                                                                        </select>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <th scope="row">
+                                                            
+                                                        </th>
+                                                        <td>
+                                                            
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            사고차 주행모드
+                                                        </th>
+                                                        <td>
+                                                            <div class="ui-form">
+                                                                <div class="ui-form-block">
+                                                                    <label for="" class="ui-form-width--r">
+                                                                        <select name="" id=""  class="ui-form-width--r" title="사고차 주행모드 선택">
+                                                                            <option>자율주행모드</option>
+                                                                            <option>일반주행모드 </option>
+                                                                        </select>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <th scope="row">
+                                                            사고차 주행상태
+                                                        </th>
+                                                        <td>
+                                                            <div class="ui-form">
+                                                                <div class="ui-form-block">
+                                                                    <label for="" class="ui-form-width--r">
+                                                                        <select name="" id=""  class="ui-form-width--r" title="사고차 주행상태 선택">
+                                                                            <option>이동상태</option>
+                                                                            <option>정지상태 </option>
+                                                                        </select>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            운행속도
+                                                        </th>
+                                                        <td>
+                                                            <div class="ui-form">
+                                                                <div class="ui-form-block">
+                                                                    <input type="text" class="ui-input ui-form-width--s" title="운행속도 입력">
+                                                                    km/h
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <th scope="row">
+                                                            승차인원
+                                                        </th>
+                                                        <td>
+                                                            <div class="ui-form">
+                                                                <div class="ui-form-block">
+                                                                    <input type="text" class="ui-input ui-form-width--s" title="승차인원 입력">
+                                                                    명
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">적재량</th>
+                                                        <td>
+                                                            <div class="ui-form">
+                                                                <div class="ui-form-block">
+                                                                    <input type="text" class="ui-input ui-form-width--s" title="적재량 입력">
+                                                                    kg
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <th scope="row">파손정도</th>
+                                                        <td>
+                                                            <div class="ui-form">
+                                                                <div class="ui-form-block">
+                                                                    <label for="" class="ui-form-width--r">
+                                                                        <select name="" id=""  class="ui-form-width--s" title="파손정도 선택">
+                                                                            <option>상</option>
+                                                                            <option>중</option>
+                                                                            <option>하</option>
+                                                                        </select>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">인적피해</th>
+                                                        <td>
+                                                            <div class="ui-form">
+                                                                <div class="ui-form-block  ui-form-row align-center">
+                                                                    <label for="" class="mr-10">
+                                                                        <select name="" id=""  class="ui-form-width--100" title="인적피해자 선택">
+                                                                            <option>가해자</option>
+                                                                            <option>피해자</option>
+                                                                        </select>
+                                                                    </label>
+                                                                    성별
+                                                                    <label for="" class="ml-5 mr-10">
+                                                                        <select name="" id=""  class="ui-form-width--xs" title="인적피해 성별 선택">
+                                                                            <option>남</option>
+                                                                            <option>여</option>
+                                                                        </select>
+                                                                    </label>
+                                                                    나이
+                                                                    <label for="" class="ml-5">
+                                                                        <select name="" id=""  class="ui-form-width--xs" title="인적피해 나이 선택">
+                                                                            <option>19</option>
+                                                                            <option>20</option>
+                                                                            <option>21</option>
+                                                                            <option>22</option>
+                                                                            <option>23</option>
+                                                                            <option>24</option>
+                                                                            <option>25</option>
+                                                                            <option>26</option>
+                                                                        </select>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <th scope="row"></th>
+                                                        <td>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">사고 상세묘사</th>
+                                                        <td colspan="3">
+                                                            editor
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
                                         </div>
-                                        
+                                        <h5 class="layout-content__subtit">첨부서류</h5>
+                                        <div class="table-wrap" id="cloneAccident">
+                                            <table class="table-basic table-basic--row">
+                                                <caption>운행정보보고 &gt; 교통사고 &gt; 첨부서류 테이블</caption>
+                                                <colgroup>
+                                                    <col style="width:18%">
+                                                    <col style="width:auto">
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            운행정보
+                                                        </th>
+                                                        <td>
+                                                            <div class="ui-form">
+                                                                <form action="">
+                                                                    <div class="file">
+                                                                        <div class="file__input" id="file__input">
+                                                                            <input class="file__input--file" id="customFile" type="file" multiple="multiple" name="files[]">
+                                                                            <input class="file__upload--name" disabled="" placeholder="선택된 파일 없음">
+                                                                            <label class="file__input--label" for="customFile">파일찾기</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            사고기록장치 저장데이터
+                                                        </th>
+                                                        <td>
+                                                            <div class="ui-form">
+                                                                <form action="">
+                                                                    <div class="file">
+                                                                        <div class="file__input" id="file__input">
+                                                                            <input class="file__input--file" id="customFile" type="file" multiple="multiple" name="files[]">
+                                                                            <input class="file__upload--name" disabled="" placeholder="선택된 파일 없음">
+                                                                            <label class="file__input--label" for="customFile">파일찾기</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">
+                                                            기타 첨부파일
+                                                        </th>
+                                                        <td>
+                                                            <div class="ui-form">
+                                                                <form action="">
+                                                                    <div class="file">
+                                                                        <div class="file__input" id="file__input">
+                                                                            <input class="file__input--file" id="customFile" type="file" multiple="multiple" name="files[]">
+                                                                            <input class="file__upload--name" disabled="" placeholder="선택된 파일 없음">
+                                                                            <label class="file__input--label" for="customFile">파일찾기</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <h5 class="layout-content__subtit">주행영상데이터</h5>
+                                        <div>
+                                            기존영상데이터 업로드 프로그램
+                                        </div>
+                                        <div class="btn-wrap btn-row justify-center mt-30 mb-80">
+                                            <button type="button" class="btn btn-width--l btn-color--white">취소</button>
+                                            <button type="button" class="btn btn-width--l btn-color--navy">등록</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

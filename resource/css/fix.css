@@ -87,11 +87,39 @@
 .ml-auto {
   margin-left: auto;
 }
+.ml-5 {
+  margin-left: 5px !important;
+}
+.ml-10 {
+  margin-left: 10px;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
 .mt-30 {
   margin-top: 30px;
 }
+.mt-40 {
+  margin-top: 40px;
+}
+.mt-50 {
+  margin-top: 50px;
+}
 .mb-80 {
   margin-bottom: 80px;
+}
+.mr-5 {
+  margin-right: 5px !important;
+}
+.mr-10 {
+  margin-right: 10px;
+}
+.mx-10 {
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .lists li {

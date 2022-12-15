@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../resource/css/lib/bootstrap-datetimepicker.min.css">
     <link rel="stylesheet" href="../resource/css/ux-common.css">
     <link rel="stylesheet" href="../resource/css/sub.css">
-    <link rel="stylesheet" href="../resource/css/commonData.css">
+    <link rel="stylesheet" href="../resource/css/us_du.css">
     <title>TS 한국교통안전공단</title>
 </head>
 <body>
@@ -307,33 +307,291 @@
                         <div class="layout-container layout-full">
                             <div class="layout-container__inner layout-container--row">
                                 <div class="lnb">
-                                    <h3 class="lnb__tit">공공데이터</h3>
+                                    <h3 class="lnb__tit">운행정보보고</h3>
                                     <div class="lnb-list">
                                         <div class="lnb-item">
-                                            <a href="">일반시나리오 데이터셋</a>
-                                        </div>
-                                        <div class="lnb-item">
-                                            <a href="">엣지케이스 시나리오<br/>데이터셋</a>
+                                            <a href="">교통사고</a>
                                         </div>
                                         <div class="lnb-item is-active">
-                                            <a href="">V2X 데이터셋</a>
+                                            <a href="">운행정보보고서</a>
+                                        </div>
+                                        <div class="lnb-item">
+                                            <a href="">장치 및 기능변경</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="layout-content">
                                     <div class="layout-content__inner">
                                         <div class="layout-content__top">
-                                            <h4 class="layout-content__tit">V2X 데이터셋</h4>
+                                            <h4 class="layout-content__tit">운행정보보고서</h4>
                                             <ul class="location ml-auto">
                                                 <li>
                                                     <img src="../resource/image/sub/icon/icon-home.png" alt="홈">
                                                 </li>
-                                                <li>공공데이터</li>
-                                                <li>V2X 데이터셋</li>
+                                                <li>운행정보보고</li>
+                                                <li>운행정보보고서</li>
                                             </ul>
                                         </div>
-                                        
-                                        
+                                        <h5 class="layout-content__subtit d-flex">
+                                            운행정보보고서 등록
+                                        </h5>
+                                        <div class="table-wrap">
+                                            <table class="table-basic table-basic--row">
+                                                <caption>운행정보보고 &gt; 운행정보보고서 &gt; 운행정보보고서 등록 테이블</caption>
+                                                <colgroup>
+                                                    <col style="width:18%">
+                                                    <col style="width:auto">
+                                                    <col style="width:18%">
+                                                    <col style="width:34%">
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">임시운행기관</th>
+                                                        <td>㈜케이스랩</td>
+                                                        <th scope="row">임시운행등록번호</th>
+                                                        <td>2022-016</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table class="table-basic table-basic--row mt-20">
+                                                <caption>운행정보보고 &gt; 운행정보보고서 &gt; 운행정보보고서 등록 테이블</caption>
+                                                <colgroup>
+                                                    <col style="width:18%">
+                                                    <col style="width:auto">
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">보험가입일자</th>
+                                                        <td colspan="3">2022-01-01</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table class="table-basic table-basic--row mt-20">
+                                                <caption>운행정보보고 &gt; 운행정보보고서 &gt; 운행정보보고서 등록 테이블</caption>
+                                                <colgroup>
+                                                    <col style="width:18%">
+                                                    <col style="width:auto">
+                                                    <col style="width:18%">
+                                                    <col style="width:34%">
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row">기준일자</th>
+                                                        <td>
+                                                            <div class="ui-form ui-form-row align-center">
+                                                                <div class="ui-form-block">
+                                                                    <input type="text" class="ui-input ui-form-width--s" title="기준일자 입력">
+                                                                </div>
+                                                                <div class="ui-form-block el-essential ml-10">
+                                                                    ex) 2022-01-01
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <th scope="row">총 주행거리</th>
+                                                        <td>
+                                                            <div class="ui-form ui-form-row align-center">
+                                                                <div class="ui-form-block">
+                                                                    <input type="text" class="ui-input ui-form-width--s" title="총 주행거리 입력" placeholder="2500" disabled>
+                                                                </div>
+                                                                <div class="ui-form-block ml-10">
+                                                                    km
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row">자율모드 주행거리</th>
+                                                        <td>
+                                                            <div class="ui-form ui-form-row align-center">
+                                                                <div class="ui-form-block">
+                                                                    <input type="text" class="ui-input ui-form-width--s" title="자율모드 주행거리 입력" placeholder="600" disabled>
+                                                                </div>
+                                                                <div class="ui-form-block ml-10">
+                                                                    km
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <th scope="row">일반모드 주행거리</th>
+                                                        <td>
+                                                            <div class="ui-form ui-form-row align-center">
+                                                                <div class="ui-form-block">
+                                                                    <input type="text" class="ui-input ui-form-width--s" title="일반모드 주행거리 입력">
+                                                                </div>
+                                                                <div class="ui-form-block ml-10">
+                                                                    km
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                            <table class="table-basic table-basic--row mt-20 table-us_du_02_write--04">
+                                                <caption>운행정보보고 &gt; 운행정보보고서 &gt; 운행정보보고서 등록 테이블</caption>
+                                                <colgroup>
+                                                    <col style="width:18%">
+                                                    <col style="width:17%">
+                                                    <col style="width:auto">
+                                                    <col style="width:18%">
+                                                    <col style="width:17%">
+                                                    <col style="width:17%">
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row" rowspan="6">월별 자율모드 주행거리</th>
+                                                        <td>2022-01</td>
+                                                        <td>
+                                                            <div class="ui-form ui-form-row align-center">
+                                                                <div class="ui-form-block">
+                                                                    <input type="text" class="ui-input ui-form-width--xs" title="일반모드 주행거리 입력">
+                                                                </div>
+                                                                <div class="ui-form-block ml-10">
+                                                                    km
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <th scope="row" rowspan="6">월별 제어권 전환 횟수</th>
+                                                        <td>2022-01</td>
+                                                        <td>1건</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2022-02</td>
+                                                        <td>
+                                                            <div class="ui-form ui-form-row align-center">
+                                                                <div class="ui-form-block">
+                                                                    <input type="text" class="ui-input ui-form-width--xs" title="일반모드 주행거리 입력">
+                                                                </div>
+                                                                <div class="ui-form-block ml-10">
+                                                                    km
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>2022-02</td>
+                                                        <td>3건</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2022-03</td>
+                                                        <td>
+                                                            <div class="ui-form ui-form-row align-center">
+                                                                <div class="ui-form-block">
+                                                                    <input type="text" class="ui-input ui-form-width--xs" title="일반모드 주행거리 입력">
+                                                                </div>
+                                                                <div class="ui-form-block ml-10">
+                                                                    km
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>2022-03</td>
+                                                        <td>5건</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2022-04</td>
+                                                        <td>
+                                                            <div class="ui-form ui-form-row align-center">
+                                                                <div class="ui-form-block">
+                                                                    <input type="text" class="ui-input ui-form-width--xs" title="일반모드 주행거리 입력">
+                                                                </div>
+                                                                <div class="ui-form-block ml-10">
+                                                                    km
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>2022-04</td>
+                                                        <td>2건</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2022-05</td>
+                                                        <td>
+                                                            <div class="ui-form ui-form-row align-center">
+                                                                <div class="ui-form-block">
+                                                                    <input type="text" class="ui-input ui-form-width--xs" title="일반모드 주행거리 입력">
+                                                                </div>
+                                                                <div class="ui-form-block ml-10">
+                                                                    km
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td>2022-05</td>
+                                                        <td>2건</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>합계</td>
+                                                        <td>
+                                                            600km
+                                                        </td>
+                                                        <td>합계</td>
+                                                        <td>13건</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <h5 class="layout-content__subtit">제어권 전환 정보</h5>
+                                        <table class="table-basic table-basic--col mt-20 table-us_du_02_view--05">
+                                            <caption>운행정보보고 &gt; 운행정보보고서 &gt; 운행정보보고서 등록 테이블</caption>
+                                            <colgroup>
+                                                <col style="width:25%">
+                                                <col style="width:auto">
+                                                <col style="width:20%">
+                                                <col style="width:25%">
+                                            </colgroup>
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">일시(월/일/시)</th>
+                                                    <th scope="col">장소</th>
+                                                    <th scope="col">사유(기존사유)</th>
+                                                    <th scope="col">비고</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>2022-01-01 14:00:00</td>
+                                                    <td>경기도 화성시 K-City PG내</td>
+                                                    <td></td>
+                                                    <td>임시운행허가 시험 테스트 항목</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2022-01-01 14:00:00</td>
+                                                    <td>경기도 화성시 K-City PG내</td>
+                                                    <td></td>
+                                                    <td>임시운행허가 시험 테스트 항목</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2022-01-01 14:00:00</td>
+                                                    <td>경기도 화성시 K-City PG내</td>
+                                                    <td></td>
+                                                    <td>임시운행허가 시험 테스트 항목</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2022-01-01 14:00:00</td>
+                                                    <td>경기도 화성시 K-City PG내</td>
+                                                    <td></td>
+                                                    <td>임시운행허가 시험 테스트 항목</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2022-01-01 14:00:00</td>
+                                                    <td>경기도 화성시 K-City PG내</td>
+                                                    <td></td>
+                                                    <td>임시운행허가 시험 테스트 항목</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2022-01-01 14:00:00</td>
+                                                    <td>경기도 화성시 K-City PG내</td>
+                                                    <td></td>
+                                                    <td>임시운행허가 시험 테스트 항목</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2022-01-01 14:00:00</td>
+                                                    <td>경기도 화성시 K-City PG내</td>
+                                                    <td></td>
+                                                    <td>임시운행허가 시험 테스트 항목</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="btn-wrap btn-row justify-center mt-30 mb-80">
+                                            <button type="button" class="btn btn-width--l btn-color--white">삭제</button>
+                                            <button type="button" class="btn btn-width--l btn-color--gray">수정</button>
+                                            <button type="button" class="btn btn-width--l btn-color--navy">목록으로</button>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>

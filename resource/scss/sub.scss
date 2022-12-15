@@ -156,6 +156,31 @@
         }
     }
 }
+.page{
+    &-wrap{
+        position:relative;
+        .btn-wrap{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            height:100%;
+            button{
+                height:100%;
+            }
+        }
+    }
+}
+.pos{
+    &-ab{
+        position:absolute;
+        &--right{
+            @include pos(absolute, $r:0);
+        }
+        &--top{
+            @include pos(absolute, $t:0);
+        }
+    }
+}
 .paging{
     display:flex;
     justify-content: center;

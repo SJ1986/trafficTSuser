@@ -161,7 +161,7 @@ $('.file__input--file').on('change',function(event){
         $("<div class='file__value'><div class='file__value--text'>" + file.name + "<button type='button' class='file__value--remove' title='첨부파일 닫기'></button></div>" + "</div></div>").insertAfter('#file__input');
     }
 });
-//Click to remove item
+    //Click to remove item
 $('body').on('click', '.file__value--remove', function() {
     $(this).parents('.file__value').remove();
 });
@@ -175,3 +175,6 @@ $('.btn--schDetail').click(function(){
     schDetail.slideToggle(200).toggleClass('is-open');
 })
 /* //add : 2022.11.30 search detail event */
+
+/* add : 2022.12.15 clone method */
+/* //add : 2022.12.15 clone method */

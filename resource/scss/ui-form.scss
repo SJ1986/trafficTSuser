@@ -39,6 +39,10 @@ select{
     &:disabled{
         background-color:#ddd;
     }
+    &.ui-form-width--xs{
+        padding-left:10px;
+        padding-right:15px;
+    }
 }
 textarea{
     padding:10px;
@@ -110,14 +114,26 @@ textarea{
             display:flex;
         }
         &-width{
+            &--140{
+                width:140px;
+            }
+            &--100{
+                width:100px;
+            }
             &--l{
                 width:450px
             }
             &--m{
                 width:346px
             }
+            &--r{
+                width:250px
+            }
             &--s{
                 width:158px
+            }
+            &--xs{
+                width:50px;
             }
             &--full{
                 width:100%;
@@ -151,6 +167,11 @@ textarea{
             vertical-align: middle;
             border:1px solid #ddd;
             color:#999;
+            &::placeholder{
+                font-size:15px;
+                font-weight:400;
+                color:#747478;
+            }
         }
     }
 	&__input{

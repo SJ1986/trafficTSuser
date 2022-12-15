@@ -115,6 +115,10 @@ select {
 select:disabled {
   background-color: #ddd;
 }
+select.ui-form-width--xs {
+  padding-left: 10px;
+  padding-right: 15px;
+}
 
 textarea {
   padding: 10px;
@@ -206,14 +210,26 @@ textarea {
   display: -ms-flexbox;
   display: flex;
 }
+.ui-form-width--140 {
+  width: 140px;
+}
+.ui-form-width--100 {
+  width: 100px;
+}
 .ui-form-width--l {
   width: 450px;
 }
 .ui-form-width--m {
   width: 346px;
 }
+.ui-form-width--r {
+  width: 250px;
+}
 .ui-form-width--s {
   width: 158px;
+}
+.ui-form-width--xs {
+  width: 50px;
 }
 .ui-form-width--full {
   width: 100%;
@@ -242,6 +258,31 @@ textarea {
   vertical-align: middle;
   border: 1px solid #ddd;
   color: #999;
+}
+.file__upload--name::-webkit-input-placeholder {
+  font-size: 15px;
+  font-weight: 400;
+  color: #747478;
+}
+.file__upload--name::-moz-placeholder {
+  font-size: 15px;
+  font-weight: 400;
+  color: #747478;
+}
+.file__upload--name:-ms-input-placeholder {
+  font-size: 15px;
+  font-weight: 400;
+  color: #747478;
+}
+.file__upload--name::-ms-input-placeholder {
+  font-size: 15px;
+  font-weight: 400;
+  color: #747478;
+}
+.file__upload--name::placeholder {
+  font-size: 15px;
+  font-weight: 400;
+  color: #747478;
 }
 .file__input, .file__value {
   display: -webkit-box;
