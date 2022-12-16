@@ -59,6 +59,18 @@ footer{
             width:190px
         }
     }
+    &-height{
+        &--s{
+            height:30px;
+            line-height:normal;
+        }
+        &--m{
+            height:40px
+        }
+        &--l{
+            height:50px
+        }
+    }
     &-color{
         &--white{
             background-color:#fff;
@@ -84,6 +96,14 @@ footer{
                 background-color:#fff;
                 color:#000;
                 border:1px solid #ccc;
+            }
+        }
+        &--caution{
+            background-color:rgb(219, 68, 68);
+            color:rgb(255, 255, 255);
+            &:hover{
+                background-color:rgb(182, 55, 55);
+                color:#fff;
             }
         }
     }

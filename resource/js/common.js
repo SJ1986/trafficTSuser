@@ -60,3 +60,20 @@ function imgSwitch(){
         });    
     });
 }
+
+//pop event
+function popEvent(obj){
+    $('.popup-overlay').hide();
+    $(obj).click(function(){
+        let thisId = $('#' + $(this).data('id'));
+        let thisClose = thisId.find('.popup-close, .popup-okay');
+        thisId.show().addClass('is-open');
+        $('.popup-overlay').show();
+
+        $(thisClose).click(function(){
+            thisId.removeClass('is-open');
+            $('.popup-overlay').hide();
+        })
+    });
+};
+let popFn = new popEvent('.js-popup');

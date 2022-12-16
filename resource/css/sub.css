@@ -267,6 +267,9 @@
 .el-essential {
   color: #f18200;
 }
+.el-caution {
+  color: red;
+}
 .el-box {
   padding: 25px 15px;
   background-color: #f7f7f7;
@@ -281,4 +284,196 @@
 .editor-view__link {
   margin: 0;
   padding: 0;
+}
+
+.noticeView-wrap .crack__links a {
+  display: block;
+  padding-left: 30px;
+  font-size: 16px;
+  background: url("../image/common/icon/icon-download--blue.png") no-repeat 0 0/17px 17px;
+  line-height: 1.3;
+}
+.noticeView-wrap .crack__links a + a {
+  margin-top: 15px;
+}
+.noticeView-wrap .crack__tit {
+  margin-right: 45px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+}
+.noticeView__top {
+  padding: 40px 0;
+  border-top: 2px solid #204557;
+  border-bottom: 1px solid #aaacad;
+  text-align: center;
+}
+.noticeView__tit {
+  font-size: 24px;
+  font-weight: bold;
+}
+.noticeView__capt {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 20px;
+}
+.noticeView__capt * {
+  font-size: 16px;
+}
+.noticeView__capt dt {
+  margin-right: 10px;
+  font-weight: 400;
+  color: #000;
+}
+.noticeView__capt dd {
+  font-weight: 400;
+  color: #747478;
+}
+.noticeView__capt dd + dt {
+  position: relative;
+  margin-left: 20px;
+  padding-left: 20px;
+}
+.noticeView__capt dd + dt::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 1px;
+  height: 12px;
+  background-color: #c9ced0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  content: "";
+}
+.noticeView__cont {
+  padding: 40px 0;
+  border-bottom: 1px solid #eceff0;
+}
+.noticeView__cont p {
+  font-size: 16px;
+  line-height: 1.7;
+}
+.noticeView__link > div[class^=link-] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #eceff0;
+}
+.noticeView__link > div[class^=link-] a {
+  display: block;
+  margin-left: 20px;
+  font-size: 14px;
+}
+.noticeView__link div[class$=__capt] {
+  width: 100px;
+  height: 35px;
+  border-bottom: 1px solid #eceff0;
+  padding: 10px 0;
+  background-color: #325073;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  border-radius: 3px;
+  text-align: center;
+}
+.noticeView__crack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 25px 40px;
+  background-color: #f5f8fb;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.popup {
+  background-color: #fff;
+  border-radius: 5px;
+  z-index: 3;
+}
+.popup-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+  z-index: 3;
+}
+.popup-wrap.is-open {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+.popup-header {
+  padding: 15px 0;
+  border-bottom: 2px solid #305363;
+}
+.popup-header .popup-close {
+  margin-left: auto;
+}
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  z-index: 2;
+}
+.popup__inner {
+  width: 100%;
+  padding: 15px 30px 30px;
+  height: auto;
+}
+.popup-cont {
+  width: auto;
+  height: auto;
+  margin: 0 auto;
+}
+.popup-box {
+  padding: 50px 0;
+  background-color: #f5f8fb;
+}
+.popup-box__txt {
+  font-size: 18px;
+  font-weight: 200;
+  text-align: center;
+}
+.popup-box__txt span {
+  display: inline-block;
+}
+.popup-box__name {
+  font-weight: 500;
+}
+.popup-box__date {
+  font-size: 20px;
+  font-weight: 500;
+  color: #0053b3;
 }

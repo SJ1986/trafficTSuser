@@ -98,6 +98,16 @@ footer.sub .btn--report {
 .btn-width--l {
   width: 190px;
 }
+.btn-height--s {
+  height: 30px;
+  line-height: normal;
+}
+.btn-height--m {
+  height: 40px;
+}
+.btn-height--l {
+  height: 50px;
+}
 .btn-color--white {
   background-color: #fff;
   color: #747478;
@@ -123,6 +133,14 @@ footer.sub .btn--report {
   background-color: #fff;
   color: #000;
   border: 1px solid #ccc;
+}
+.btn-color--caution {
+  background-color: rgb(219, 68, 68);
+  color: rgb(255, 255, 255);
+}
+.btn-color--caution:hover {
+  background-color: rgb(182, 55, 55);
+  color: #fff;
 }
 .btn--report {
   height: 36px;
