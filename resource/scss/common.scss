@@ -306,6 +306,13 @@ header{
         }
     }
 }
+.container{
+    position:relative;
+    top:auto;
+    left:auto;
+    right:auto;
+    bottom:auto;
+}
 .content{
     padding-top:132px;
     &.main{

@@ -11,16 +11,14 @@
         }
     }
 }
-#fullpage{
-    .fullpage-block{
-        &[data-anchor="first"]{
-            background:url('../image/main/img-main-visual.jpg') no-repeat 0 0;
-            background-size:cover;
-        }
-        &[data-anchor="second"]{
-            background:url('../image/main/img-main-visual02.jpg') no-repeat 0 0;
-            background-size:cover;
-        }
+.fullpage-block{
+    &[data-anchor="first"]{
+        background:url('../image/main/img-main-visual.jpg') no-repeat 0 0;
+        background-size:cover;
+    }
+    &[data-anchor="second"]{
+        background:url('../image/main/img-main-visual02.jpg') no-repeat 0 0;
+        background-size:cover;
     }
 }
 .fp-viewing{

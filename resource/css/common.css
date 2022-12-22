@@ -363,6 +363,14 @@ header.sub .side-menu__btn span {
           transform: translateX(-250%);
 }
 
+.container {
+  position: relative;
+  top: auto;
+  left: auto;
+  right: auto;
+  bottom: auto;
+}
+
 .content {
   padding-top: 132px;
 }

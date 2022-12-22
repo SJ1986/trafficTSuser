@@ -52,11 +52,11 @@
   background-color: #000d2a;
 }
 
-#fullpage .fullpage-block[data-anchor=first] {
+.fullpage-block[data-anchor=first] {
   background: url("../image/main/img-main-visual.jpg") no-repeat 0 0;
   background-size: cover;
 }
-#fullpage .fullpage-block[data-anchor=second] {
+.fullpage-block[data-anchor=second] {
   background: url("../image/main/img-main-visual02.jpg") no-repeat 0 0;
   background-size: cover;
 }
